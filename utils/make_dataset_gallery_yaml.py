@@ -19,14 +19,21 @@ yaml.add_representer(str, str_presenter)
 
 
 
-def collect_dataset_info():
+def collect_dataset_info(dataset_name=None):
     """Scans all mirdata datasets and extracts metadata for the gallery."""
     successful = []
     skipped = {}
+    datasets = mirdata.list_datasets()
+    #if given dataset name in CLI
+    if dataset_name:
+        if dataset_name in datasets:
+            datasets = [dataset_name]
+        else:
+            raise ValueError(f"Dataset {dataset_name} not found in mirdata.")
 
-    print(f"Scanning all {len(mirdata.list_datasets())} datasets in mirdata...")
+    print(f"Scanning all {len(datasets)} datasets in mirdata...")
 
-    for name in mirdata.list_datasets():
+    for name in datasets:
         try:
             dataset = mirdata.initialize(name)
             
@@ -89,9 +96,12 @@ def main():
         default=os.path.join("dataset_yamls"),
         help="Path where yaml files will be saved (default: dataset_yamls)",
     )
+    parser.add_argument("--dataset", type=str, default=None,help="Specific dataset to generate yaml for")
+    
+    
     args = parser.parse_args()
 
-    datasets = collect_dataset_info()
+    datasets = collect_dataset_info(args.dataset)
     generate_gallery_yaml(datasets, args.output)
 
 
