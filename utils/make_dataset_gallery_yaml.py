@@ -1,0 +1,99 @@
+"""Script to generate yamls from mirdata dataset loaders.
+
+Usage:
+    python make_dataset_gallery_yaml.py
+    python make_dataset_gallery_yaml.py --output your/folder/containing/dataset_yamls
+"""
+
+import argparse
+import os
+import mirdata
+import yaml
+import sys
+###helper function for the yaml format
+def str_presenter(dumper, data):
+    if "\n" in data:
+        return dumper.represent_scalar("tag:yaml.org,2002:str", data, style="|")
+    return dumper.represent_scalar("tag:yaml.org,2002:str", data)
+yaml.add_representer(str, str_presenter)
+
+
+
+def collect_dataset_info():
+    """Scans all mirdata datasets and extracts metadata for the gallery."""
+    successful = []
+    skipped = {}
+
+    print(f"Scanning all {len(mirdata.list_datasets())} datasets in mirdata...")
+
+    for name in mirdata.list_datasets():
+        try:
+            dataset = mirdata.initialize(name)
+            
+            # Extract basic info
+            license_info = getattr(dataset, "license_info", "Not specified")
+            download_info = getattr(dataset, "_download_info", None)
+            bibtex = getattr(dataset, "bibtex", None)
+            remotes = list(dataset.remotes.keys()) if dataset.remotes else []
+            docstring = sys.modules[f"mirdata.datasets.{name}"].__doc__
+            
+            # Extract ground-truth annotations (cached_property)
+            track_class = getattr(dataset, "_track_class", None)
+            annotations = []
+            if track_class:
+                for attr in dir(track_class):
+                    if attr.startswith("_"):
+                        continue
+                    item = getattr(track_class, attr, None)
+                    if isinstance(item, mirdata.core.cached_property):
+                        annotations.append(attr)
+
+            successful.append({
+                "name": name,
+                "license": license_info,
+                "remotes": remotes,
+                "annotations": annotations,
+                "download_info": download_info,
+                "bibtex": bibtex,
+                "docstring": docstring
+
+            })
+            print(f"  [OK]    {name:30s} | Annotations: {len(annotations)}")
+
+        except ModuleNotFoundError as e:
+            missing_pkg = str(e).replace("No module named ", "").strip("'")
+            skipped[name] = f"Missing library: {missing_pkg}"
+            print(f"  [SKIP]  {name:30s} | Skipped (needs: {missing_pkg})")
+
+        except Exception as e:
+            skipped[name] = str(e)
+            print(f"  [ERROR] {name:30s} | Error: {e}")
+
+    print(f"\nDone! Processed: {len(successful)}, Skipped: {len(skipped)}\n")
+    return successful
+
+def generate_gallery_yaml(datasets, output_dir):
+  for dataset in datasets:
+    name = dataset["name"]
+    filepath = os.path.join(output_dir,f"{name}.yaml")
+    with open(filepath, "w", encoding="utf-8") as f:
+      yaml.dump(dataset, f, sort_keys=False,allow_unicode=True) ##allow unicode for some nicer formatting
+    print(f"[SUCCESS] Written to {filepath}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate dataset yaml files for mirdata.")
+    parser.add_argument(
+        "--output",
+        type=str,
+        default=os.path.join("dataset_yamls"),
+        help="Path where yaml files will be saved (default: dataset_yamls)",
+    )
+    args = parser.parse_args()
+
+    datasets = collect_dataset_info()
+    generate_gallery_yaml(datasets, args.output)
+
+
+if __name__ == "__main__":
+    main()
