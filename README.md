@@ -1,7 +1,7 @@
 # mirdata Gallery
-
-A repository for generating and maintaining structured YAML metadata for all datasets supported by the [`mirdata`](https://github.com/mir-dataset-loaders/mirdata) Python library. These YAML files serve as the **initial** data source for the `mirdata` dataset gallery 
 ---
+A repository for generating and maintaining structured YAML metadata for all datasets supported by the [`mirdata`](https://github.com/mir-dataset-loaders/mirdata) Python library. These YAML files serve as the **initial** data source for the `mirdata` dataset gallery 
+
 
 ## How the Script Works
 
