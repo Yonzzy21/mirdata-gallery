@@ -1,3 +1,6 @@
+<img width="1618" height="500" alt="Screenshot 2026-09-14 at 3 58 18 PM" src="https://github.com/user-attachments/assets/06076d36-9fcc-4c77-8c82-db26f22f3be9" />
+
+
 # mirdata Gallery
 ---
 A repository for generating and maintaining structured YAML metadata for all datasets supported by the [`mirdata`](https://github.com/mir-dataset-loaders/mirdata) Python library. These YAML files serve as the **initial** data source for the `mirdata` dataset gallery 
