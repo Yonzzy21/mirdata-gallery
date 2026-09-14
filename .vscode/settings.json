@@ -1,0 +1,10 @@
+{
+  "esbonio.sphinx.pythonCommand": [
+    "${venv:./.venv}"
+  ],
+  "esbonio.sphinx.confDir": "${workspaceFolder}/docs",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "[restructuredtext]": {
+    "editor.formatOnSave": false
+  }
+}

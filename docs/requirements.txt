@@ -1,5 +1,3 @@
-mirdata
-pyyaml
 dali-dataset>=1.0
 Deprecated>=1.2.13
 librosa>=0.10.1
