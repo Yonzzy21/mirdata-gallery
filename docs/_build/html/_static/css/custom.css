@@ -106,6 +106,8 @@ div.wy-nav-content {
     font-size: 0.85em;
     font-weight: 500;
     display: inline-block;
+    vertical-align: middle;
+
     margin: 2px 2px;
 }
 

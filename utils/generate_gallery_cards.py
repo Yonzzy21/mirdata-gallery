@@ -37,7 +37,8 @@ for yml_path in sorted(yaml_dir.glob("*.yaml")):
     else:
         remotes_str = "*No direct download available*"
 
-    # Build the card header and metadata bullets
+    
+    
     card = f"""{name}
 {'-' * len(name)}
 
@@ -47,6 +48,30 @@ for yml_path in sorted(yaml_dir.glob("*.yaml")):
 * **Downloadable Remotes:** {remotes_str}
 * **YAML File:** :download:`{yml_path.name} <../dataset_yamls/{yml_path.name}>`
 """
+     # 2. Add Dataset Information dropdown
+    docstring = data.get("docstring")
+    if docstring and docstring.strip():
+        lines = docstring.strip().splitlines()
+        filtered = []
+        for line in lines:
+            stripped = line.strip()
+            # Remove redundant ".. admonition::", ":class:", and "<Dataset> Loader" headers
+            if stripped.startswith(".. admonition::") or stripped.startswith(":class:"):
+                continue
+            if stripped.endswith("Loader") and len(stripped.split()) <= 4:
+                continue
+            filtered.append(line)
+        
+        # Dedent and re-indent cleanly
+        clean_doc = textwrap.dedent("\n".join(filtered)).strip()
+        indented_doc = textwrap.indent(clean_doc, "   ")
+        card += f"""
+.. admonition:: Dataset Information
+   :class: dropdown
+   
+{indented_doc}
+"""
+
 
     # 3. Add Download Instructions dropdown if available
     download_info = data.get("download_info")
