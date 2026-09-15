@@ -38,7 +38,7 @@ def collect_dataset_info(dataset_name=None):
             dataset = mirdata.initialize(name)
             
             # Extract basic info
-            license_info = getattr(dataset, "license_info", "Not specified")
+            license_info = getattr(dataset, "_license_info", "Not specified")
             download_info = getattr(dataset, "_download_info", None)
             bibtex = getattr(dataset, "bibtex", None)
             remotes = list(dataset.remotes.keys()) if dataset.remotes else []

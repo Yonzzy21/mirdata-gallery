@@ -1,5 +1,8 @@
 name: idmt_smt_audio_effects
-license: Not specified
+license: |2
+
+  Creative Commons BY-NC-ND 4.0.
+  https://creativecommons.org/licenses/by-nc-nd/4.0/
 remotes:
 - full_dataset
 annotations: []

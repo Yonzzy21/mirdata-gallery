@@ -1,5 +1,7 @@
 name: dagstuhl_choirset
-license: Not specified
+license: |2
+
+  Creative Commons Attribution 4.0 International
 remotes:
 - full_dataset
 annotations:

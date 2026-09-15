@@ -1,5 +1,6 @@
 name: compmusic_jingju_acappella
-license: Not specified
+license: 'audio files ending with upf or lon: Creative Commons Attribution Non-Commercial
+  4.0 International, audio files ending with qm: http://isophonics.org/SingingVoiceDataset'
 remotes:
 - annotation_txt
 - catalogue_dan

@@ -1,5 +1,7 @@
 name: mdb_stem_synth
-license: Not specified
+license: |2
+
+  Attribution-NonCommercial 4.0 International
 remotes:
 - mdb_stem_synth
 annotations:

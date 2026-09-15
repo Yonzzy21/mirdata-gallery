@@ -1,5 +1,15 @@
 name: rwc_classical
-license: Not specified
+license: |2
+
+  From the dataset's owner webpage:
+
+  'Users who have submitted the Pledge and received authorization may freely use the database for research purposes
+  without facing the usual copyright restrictions, but all of the copyrights and neighboring rights connected with
+  this database belong to the National Institute of Advanced Industrial Science and Technology and are managed by the
+  RWC Music Database Administrator. Persons or organizations that have not submitted a Pledge and that have not
+  received authorization may not use the database.'
+
+  See https://staff.aist.go.jp/m.goto/RWC-MDB/ for more details.
 remotes:
 - annotations_beat
 - annotations_sections

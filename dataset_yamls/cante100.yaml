@@ -1,5 +1,9 @@
 name: cante100
-license: Not specified
+license: |2
+
+  The provided datasets are offered free of charge for internal non-commercial use.
+  We do not grant any rights for redistribution or modification. All data collections
+  were gathered by the COFLA team. COFLA 2015. All rights reserved.
 remotes:
 - spectrogram
 - melody

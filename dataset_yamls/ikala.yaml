@@ -1,5 +1,8 @@
 name: ikala
-license: Not specified
+license: |2
+
+  When it was distributed, Ikala used to have a custom license.
+  Visit http://mac.citi.sinica.edu.tw/ikala/ for more details.
 remotes:
 - metadata
 - notes_pyin

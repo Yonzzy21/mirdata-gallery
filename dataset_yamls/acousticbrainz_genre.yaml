@@ -1,5 +1,9 @@
 name: acousticbrainz_genre
-license: Not specified
+license: "\nThis dataset is composed of 4 subdatasets. Three of them are Creative\
+  \ Commons Attribution \nNon Commercial Share Alike 4.0 International and the other\
+  \ one is non-comercial. Details \nabout which license correspond to each subdataset\
+  \ can be found in the following websites:\n\n* https://zenodo.org/record/2553414#.X_nxnOn7RUI\
+  \ \n* https://zenodo.org/record/2554044#.X_nw2en7RUI\n \n "
 remotes:
 - validation-01
 - validation-89

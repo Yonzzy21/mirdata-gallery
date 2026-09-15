@@ -1,5 +1,5 @@
 name: guitarset
-license: Not specified
+license: MIT License.
 remotes:
 - annotations
 - audio_hex_debleeded

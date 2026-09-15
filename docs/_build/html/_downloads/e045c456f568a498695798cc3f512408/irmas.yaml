@@ -1,5 +1,5 @@
 name: irmas
-license: Not specified
+license: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 remotes:
 - training_data
 - testing_data_1

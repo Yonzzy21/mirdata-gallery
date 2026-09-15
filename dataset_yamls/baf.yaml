@@ -1,5 +1,10 @@
 name: baf
-license: Not specified
+license: |
+  Given the different ownership of the elements of the dataset, the dataset is licensed under the following conditions:
+      * User's access request
+      * Research only, non-commercial purposes
+      * No adaptations nor derivative works
+      * Attribution to Epidemic Sound and the authors as it is indicated in the ”citation” section.
 remotes: []
 annotations: []
 download_info: |

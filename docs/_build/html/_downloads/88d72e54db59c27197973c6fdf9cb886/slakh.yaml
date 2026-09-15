@@ -1,5 +1,7 @@
 name: slakh
-license: Not specified
+license: |2
+
+  Creative Commons Attribution 4.0 International
 remotes:
 - 2100-redux
 - baby

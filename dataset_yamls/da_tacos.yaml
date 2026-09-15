@@ -1,5 +1,7 @@
 name: da_tacos
-license: Not specified
+license: |2
+
+  Creative Commons Attribution Non Commercial Share Alike 4.0 International
 remotes:
 - metadata
 - benchmark_cens

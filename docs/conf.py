@@ -140,3 +140,4 @@ html_css_files = [
 ]
 
 html_logo = "img/mirdata.png"
+html_js_files = ["js/gallery.js"]
