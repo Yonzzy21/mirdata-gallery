@@ -6,10 +6,7 @@ remotes:
 - HPCPs
 - spectrums
 annotations:
-- hpcp
-- key
-- musicbrainz_metadata
-- spectrum
+- KeyData
 download_info: |2
 
       Unfortunately the audio files of the Tonality classicalDB dataset are not available

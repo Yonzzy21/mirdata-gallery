@@ -3,14 +3,11 @@ license: Creative Commons Attribution Non Commercial Share Alike 4.0 Internation
 remotes:
 - all
 annotations:
-- metadata
-- phrases
-- pitch
-- pitch_vocal
-- sama
-- sections
-- tempo
-- tonic
+- TempoData
+- SectionData
+- F0Data
+- KeyData
+- LyricData
 download_info: null
 bibtex: |2
 

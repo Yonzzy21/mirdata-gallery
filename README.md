@@ -6,6 +6,16 @@
 A repository for generating and maintaining structured YAML metadata for all datasets supported by the [`mirdata`](https://github.com/mir-dataset-loaders/mirdata) Python library. These YAML files serve as the **initial** data source for the `mirdata` dataset gallery 
 For the gallery itself - the yaml files can be for the dataset cards, but also be the source of truth for filtering, when we define the scope of the attributes in need of filtering.
 
+to run in dev mode:
+
+```
+source .venv/bin/activate
+
+sphinx-build -b html docs docs/_build/html
+
+```
+
+
 
 ## How the Script Works
 

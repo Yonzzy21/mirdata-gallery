@@ -2,8 +2,8 @@ name: cuidado
 license: Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 remotes: []
 annotations:
-- beats
-- tempo
+- BeatData
+- TempoData
 download_info: "\n    Unfortunately the Cuidado dataset is not available for download.\n\
   \    If you have the Cuidado dataset, place the contents into a folder called\n\
   \    cuidado with the following structure:\n        > C_1.0/\n            > audio/\n\

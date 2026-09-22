@@ -4,8 +4,8 @@ license: Creative Commons Attribution Non-Commercial Share-Alike 4.0 (CC BY-NC-S
 remotes:
 - notes_pyin
 annotations:
-- notes_pyin
-- pitch
+- F0Data
+- NoteData
 download_info: |2
 
       To download this dataset, visit:

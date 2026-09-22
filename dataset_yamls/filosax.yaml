@@ -16,7 +16,7 @@ license: "\nThe Filosax dataset contains copyright material and is shared with r
   \ these conditions of use at any time. \n"
 remotes: []
 annotations:
-- notes
+- NoteData
 download_info: |2+
 
   To download the dataset, first go to the Zenodo pages below to request access:

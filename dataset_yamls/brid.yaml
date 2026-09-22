@@ -4,8 +4,8 @@ remotes:
 - annotations
 - audio
 annotations:
-- beats
-- tempo
+- BeatData
+- TempoData
 download_info: null
 bibtex: |2
 

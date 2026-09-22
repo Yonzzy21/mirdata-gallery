@@ -4,7 +4,7 @@ remotes:
 - annotations
 - audio
 annotations:
-- beats
+- BeatData
 download_info: null
 bibtex: |2
 

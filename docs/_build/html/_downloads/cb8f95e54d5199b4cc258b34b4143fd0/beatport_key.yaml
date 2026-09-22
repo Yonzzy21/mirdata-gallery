@@ -5,10 +5,8 @@ remotes:
 - metadata
 - audio
 annotations:
-- artists
-- genres
-- key
-- tempo
+- TempoData
+- KeyData
 download_info: null
 bibtex: |-
   @phdthesis {3897,

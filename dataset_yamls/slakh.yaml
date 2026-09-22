@@ -6,9 +6,8 @@ remotes:
 - 2100-redux
 - baby
 annotations:
-- midi
-- multif0
-- notes
+- NoteData
+- MultiF0Data
 download_info: null
 bibtex: |2
 

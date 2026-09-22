@@ -5,8 +5,8 @@ remotes:
 - tempo
 - beats
 annotations:
-- beats
-- tempo
+- BeatData
+- TempoData
 download_info: null
 bibtex: "\n@ARTICLE{1678001,\n    author={Gouyon, F. and Klapuri, A. and Dixon, S.\
   \ and Alonso, M. and Tzanetakis, G. and Uhle, C. and Cano, P.},\n    journal={IEEE\

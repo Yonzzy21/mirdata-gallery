@@ -15,8 +15,8 @@ remotes:
 - annotations_beat
 - annotations_sections
 annotations:
-- beats
-- sections
+- BeatData
+- SectionData
 download_info: |2
 
       Unfortunately the audio files of the RWC-Jazz dataset are not available

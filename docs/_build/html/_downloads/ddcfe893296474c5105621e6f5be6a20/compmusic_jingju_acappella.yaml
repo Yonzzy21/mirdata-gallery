@@ -7,10 +7,7 @@ remotes:
 - catalogue_laosheng
 - wav
 annotations:
-- phoneme
-- phrase
-- phrase_char
-- syllable
+- LyricData
 download_info: null
 bibtex: |2
 

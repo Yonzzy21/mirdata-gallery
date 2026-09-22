@@ -3,19 +3,9 @@ license: Creative Commons Attribution 4.0 International
 remotes:
 - features
 annotations:
-- artist
-- concert
-- mbid
-- nyas_segments
-- pitch
-- pitch_post_processed
-- raga
-- ragaid
-- recording
-- tani_segments
-- tonic
-- tonic_fine_tuned
-- tradition
+- KeyData
+- F0Data
+- SectionData
 download_info: "While annotations and metadata are freely downloadable, the audio\
   \ of this \n    dataset has restricted access. Please access: https://zenodo.org/record/7278511\
   \ and request \n    access to the audio, specifying your purpose. The audio will\

@@ -3,13 +3,8 @@ license: Creative Commons Attribution Non Commercial No Derivatives 4.0 Internat
 remotes:
 - all
 annotations:
-- arohanam
-- avarohanam
-- mbid
-- notation
-- sections
-- taala
-- tonic
+- KeyData
+- SectionData
 download_info: null
 bibtex: |2
 

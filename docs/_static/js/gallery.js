@@ -63,7 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         const license = normalizeLicense(rawLicense);
-        const title = card.querySelector("h2")?.textContent.trim() || card.id;
+        const h2 = card.querySelector("h2");
+        let title = card.id;
+        if (h2) {
+            const clone = h2.cloneNode(true);
+            const headerlink = clone.querySelector(".headerlink");
+            if (headerlink) headerlink.remove();
+            title = clone.textContent.trim();
+        }
+
 
         return { card, title, annotations, license };
     });
@@ -88,12 +96,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // 4. Build Layout: Container with Sidebar (Left) and Content Grid (Right)
     const container = document.createElement("div");
     container.className = "gallery-layout";
-
+    // Column 1: Filters Sidebar (injected into RTD navigation menu)
     const sidebar = document.createElement("aside");
     sidebar.className = "gallery-filter-sidebar";
-
-    const content = document.createElement("div");
-    content.className = "gallery-cards-grid";
+    // Column 2: Middle List of Dataset Buttons
+    const listColumn = document.createElement("div");
+    listColumn.className = "gallery-datasets-list";
+    // Column 3: Right Information Card Panel
+    const infoColumn = document.createElement("div");
+    infoColumn.className = "gallery-cards-information";
 
     // Search Input
     const search = document.createElement("input");
@@ -193,35 +204,92 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     sidebar.appendChild(licContainer);
 
-    // Move existing cards into content grid
-    cards.forEach((c) => content.appendChild(c));
-
+    // Move existing cards into the right info column and hide them
+    cards.forEach((c) => {
+        c.style.display = "none";
+        infoColumn.appendChild(c);
+    });
+    // Mount Column 1 to RTD sidebar, and Columns 2 & 3 to main area
     const wyMenu = document.querySelector(".wy-menu-vertical");
     if (wyMenu) {
         wyMenu.innerHTML = "";
         wyMenu.appendChild(sidebar);
+    } else {
+        container.appendChild(sidebar);
     }
-
-    gallery.appendChild(content);
-
+    container.appendChild(listColumn);
+    container.appendChild(infoColumn);
+    gallery.appendChild(container);
+    // Selection helper function
+    let activeItem = null;
+    function selectCard(item) {
+        if (activeItem) {
+            activeItem.btn.classList.remove("active");
+            activeItem.card.style.display = "none";
+        }
+        if (item) {
+            activeItem = item;
+            item.btn.classList.add("active");
+            item.card.style.display = "flex";
+        }
+    }
+    // Build the clickable buttons in the middle column
+    cardData.forEach((item) => {
+        const btn = document.createElement("button");
+        btn.className = "dataset-item-btn";
+        const titleSpan = document.createElement("span");
+        titleSpan.className = "dataset-item-title";
+        titleSpan.textContent = item.title;
+        btn.appendChild(titleSpan);
+        const metaDiv = document.createElement("div");
+        metaDiv.className = "dataset-item-meta";
+        if (item.license && item.license !== "Not specified") {
+            const licBadge = document.createElement("span");
+            licBadge.className = "dataset-badge-license";
+            licBadge.textContent = item.license;
+            metaDiv.appendChild(licBadge);
+        }
+        const annBadge = document.createElement("span");
+        annBadge.className = "dataset-badge-ann";
+        const count = item.annotations.length;
+        annBadge.textContent = count === 1 ? "1 annotation" : `${count} annotations`;
+        metaDiv.appendChild(annBadge);
+        btn.appendChild(metaDiv);
+        btn.addEventListener("click", () => {
+            selectCard(item);
+        });
+        item.btn = btn;
+        listColumn.appendChild(btn);
+    });
     // 5. Apply filtering logic
     function applyFilters() {
         let visibleCount = 0;
-
-        cardData.forEach(({ card, title, annotations, license }) => {
-            const matchesSearch = !state.searchQuery || annotations.some((a) => a.toLowerCase().includes(state.searchQuery));
+        let firstVisibleItem = null;
+        let currentActiveStillVisible = false;
+        cardData.forEach((item) => {
+            const matchesSearch =
+                !state.searchQuery ||
+                item.title.toLowerCase().includes(state.searchQuery) ||
+                item.annotations.some((a) => a.toLowerCase().includes(state.searchQuery));
             const matchesAnn =
                 state.selectedAnnotations.size === 0 ||
-                Array.from(state.selectedAnnotations).some((a) => annotations.includes(a));
-            const matchesLic = !state.selectedLicense || license === state.selectedLicense;
-
+                Array.from(state.selectedAnnotations).some((a) => item.annotations.includes(a));
+            const matchesLic = !state.selectedLicense || item.license === state.selectedLicense;
             const isVisible = matchesSearch && matchesAnn && matchesLic;
-            card.style.display = isVisible ? "flex" : "none";
-            if (isVisible) visibleCount++;
+            item.btn.style.display = isVisible ? "flex" : "none";
+            if (isVisible) {
+                visibleCount++;
+                if (!firstVisibleItem) firstVisibleItem = item;
+                if (activeItem === item) currentActiveStillVisible = true;
+            }
         });
-
         counter.textContent = `Showing ${visibleCount} of ${cardData.length}`;
+        // Keep current selection if visible, otherwise select first visible dataset
+        if (currentActiveStillVisible && activeItem) {
+            selectCard(activeItem);
+        } else {
+            selectCard(firstVisibleItem);
+        }
     }
-
     applyFilters();
 });

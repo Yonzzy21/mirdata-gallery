@@ -2,11 +2,7 @@ name: mtg_jamendo_autotagging_moodtheme
 license: Creative Commons Attribution NonCommercial Share Alike 4.0 International.
 remotes:
 - metadata
-annotations:
-- album_id
-- artist_id
-- duration
-- tags
+annotations: []
 download_info: "\n    The audio files can be downloaded following the path described\
   \ in https://github.com/MTG/mtg-jamendo-dataset#downloading-the-data\n    \n   \
   \ To download audio, unpack and validate all tar archives:\n    \n    .. code-block::\

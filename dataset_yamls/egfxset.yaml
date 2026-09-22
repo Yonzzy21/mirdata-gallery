@@ -16,8 +16,7 @@ remotes:
 - tubeScreamer
 - metadata
 annotations:
-- midinote
-- note_name
+- NoteData
 download_info: null
 bibtex: |2
 

@@ -2,22 +2,7 @@ name: compmusic_hindustani_rhythm
 license: Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 remotes: []
 annotations:
-- artist
-- beats
-- laya
-- lead_instrument_code
-- mbid
-- median_ISI
-- median_avarts_per_min
-- median_matra_period
-- median_matras_per_min
-- meter
-- name
-- num_of_beats
-- num_of_samas
-- raaga
-- release
-- taala
+- BeatData
 download_info: "The files of this dataset are shared under request. Please go to:\
   \ https://zenodo.org/record/1264742 and request access, stating\n    the research-related\
   \ use you will give to the dataset. Once the access is granted (it may take, at\

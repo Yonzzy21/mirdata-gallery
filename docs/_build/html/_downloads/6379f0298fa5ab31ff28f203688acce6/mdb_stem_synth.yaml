@@ -5,8 +5,7 @@ license: |2
 remotes:
 - mdb_stem_synth
 annotations:
-- audio
-- f0
+- F0Data
 download_info: null
 bibtex: |2
 

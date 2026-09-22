@@ -4,10 +4,12 @@ Usage:
     python make_dataset_gallery_yaml.py
     python make_dataset_gallery_yaml.py --output your/folder/containing/dataset_yamls
 """
-
+import typing
 import argparse
 import os
 import mirdata
+from mirdata.annotations import Annotation
+
 import yaml
 import sys
 ###helper function for the yaml format
@@ -15,8 +17,51 @@ def str_presenter(dumper, data):
     if "\n" in data:
         return dumper.represent_scalar("tag:yaml.org,2002:str", data, style="|")
     return dumper.represent_scalar("tag:yaml.org,2002:str", data)
+
 yaml.add_representer(str, str_presenter)
 
+### for annotations that might be partial in naming and not exact: "pitch_finetuned", "chords_majmin"
+FALLBACK_MAP = {
+    "beat": "BeatData",
+    "chord": "ChordData",
+    "key": "KeyData",
+    "tempo": "TempoData",
+    "section": "SectionData",
+    "segment": "SectionData",
+    "pitch": "F0Data",
+    "f0": "F0Data",
+    "melody": "F0Data",
+    "note": "NoteData",
+    "midi": "NoteData",
+    "lyric": "LyricData",
+    "phoneme": "LyricData",
+    "syllable": "LyricData",
+    "phrase": "LyricData",
+    "tonic": "KeyData",
+    "event": "EventData",
+}
+
+
+def get_annotation_class_name(attr_name,item):
+    """Extracts the class name (e.g. 'BeatData') if the property returns a mirdata Annotation."""
+    func = getattr(item, "func", None)
+    if not func:
+        return None
+    # 1. first - Get return type hint from the function
+    ret = getattr(func, "__annotations__", {}).get("return")
+    if ret:
+        for arg in typing.get_args(ret):
+            if arg is not type(None):
+                ret = arg
+                break
+        if isinstance(ret, type) and issubclass(ret, Annotation) and ret is not Annotation:
+            return ret.__name__
+    # 2. Fallback: Keyword match for niche mirdata loaders 
+    attr_lower = attr_name.lower()
+    for keyword, class_name in FALLBACK_MAP.items():
+        if keyword in attr_lower:
+            return class_name
+    return None
 
 
 def collect_dataset_info(dataset_name=None):
@@ -46,20 +91,21 @@ def collect_dataset_info(dataset_name=None):
             
             # Extract ground-truth annotations (cached_property)
             track_class = getattr(dataset, "_track_class", None)
-            annotations = []
+            annotations = set()
             if track_class:
                 for attr in dir(track_class):
                     if attr.startswith("_"):
                         continue
                     item = getattr(track_class, attr, None)
                     if isinstance(item, mirdata.core.cached_property):
-                        annotations.append(attr)
-
+                        ann_cls = get_annotation_class_name(attr,item)
+                        if ann_cls:
+                            annotations.add(ann_cls)
             successful.append({
                 "name": name,
                 "license": license_info,
                 "remotes": remotes,
-                "annotations": annotations,
+                "annotations": list(annotations),
                 "download_info": download_info,
                 "bibtex": bibtex,
                 "docstring": docstring

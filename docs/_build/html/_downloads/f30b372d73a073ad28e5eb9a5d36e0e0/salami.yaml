@@ -8,12 +8,7 @@ license: |2
 remotes:
 - annotations
 annotations:
-- sections_annotator_1_lowercase
-- sections_annotator_1_uppercase
-- sections_annotator_2_lowercase
-- sections_annotator_2_uppercase
-- sections_lowercase
-- sections_uppercase
+- SectionData
 download_info: |2
 
       Unfortunately the audio files of the Salami dataset are not available

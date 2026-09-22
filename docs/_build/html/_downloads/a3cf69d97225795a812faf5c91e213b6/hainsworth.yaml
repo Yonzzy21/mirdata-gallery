@@ -2,8 +2,8 @@ name: hainsworth
 license: Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 remotes: []
 annotations:
-- beats
-- tempo
+- BeatData
+- TempoData
 download_info: "\n    Unfortunately the Hainsworth dataset is not available for download.\n\
   \    If you have the Hainsworth dataset, place the contents into a folder called\n\
   \    hainsworth with the following structure:\n        > H_1.0/\n            > audio/\n\

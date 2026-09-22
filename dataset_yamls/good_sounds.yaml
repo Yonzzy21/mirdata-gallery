@@ -7,15 +7,7 @@ remotes:
 - takes
 - audios
 annotations:
-- instrument
-- klass
-- microphone
-- pack_info
-- pitch_reference
-- ratings_info
-- semitone
-- sound_info
-- take_info
+- F0Data
 download_info: null
 bibtex: |-
   @inproceedings{romani2015real,

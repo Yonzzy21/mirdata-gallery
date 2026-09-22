@@ -2,17 +2,7 @@ name: compmusic_carnatic_rhythm
 license: Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 remotes: []
 annotations:
-- artist
-- beats
-- lead_instrument_code
-- mbid
-- meter
-- name
-- num_of_beats
-- num_of_samas
-- raaga
-- release
-- taala
+- BeatData
 download_info: "The files of this dataset are shared under request. Please go to:\
   \ https://zenodo.org/record/1264394 and request access, stating\n    the research-related\
   \ use you will give to the dataset. Once the access is granted (it may take, at\

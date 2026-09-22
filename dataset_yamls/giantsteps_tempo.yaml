@@ -3,9 +3,7 @@ license: Creative Commons Attribution Share Alike 4.0 International.
 remotes:
 - annotations
 annotations:
-- genre
-- tempo
-- tempo_v2
+- TempoData
 download_info: |2
 
       Unfortunately the audio files of the Giant Steps Tempo dataset are not available

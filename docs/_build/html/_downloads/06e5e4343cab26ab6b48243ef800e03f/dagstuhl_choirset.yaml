@@ -5,14 +5,8 @@ license: |2
 remotes:
 - full_dataset
 annotations:
-- f0_crepe_dyn
-- f0_crepe_hsm
-- f0_crepe_lrx
-- f0_manual_lrx
-- f0_pyin_dyn
-- f0_pyin_hsm
-- f0_pyin_lrx
-- score
+- F0Data
+- NoteData
 download_info: null
 bibtex: |2
 

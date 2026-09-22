@@ -5,8 +5,7 @@ license: |2
 remotes:
 - all
 annotations:
-- notes
-- notes_original
+- NoteData
 download_info: null
 bibtex: |2
 

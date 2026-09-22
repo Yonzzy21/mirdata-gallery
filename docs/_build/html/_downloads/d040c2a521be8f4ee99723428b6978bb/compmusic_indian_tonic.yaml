@@ -3,12 +3,7 @@ license: Creative Commons Attribution Non Commercial Share Alike 4.0 Internation
 remotes:
 - remote_data
 annotations:
-- artist
-- gender
-- mbid
-- tonic
-- tradition
-- type
+- KeyData
 download_info: "\n    The audio of this dataset is private, and it is only shared\
   \ for research purposes. Please refer to:\n    https://zenodo.org/record/7342372,\
   \ request the audios clearly explaning why and how are you planning \n    to use\

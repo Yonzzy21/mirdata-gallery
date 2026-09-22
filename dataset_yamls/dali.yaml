@@ -3,11 +3,7 @@ license: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 remotes:
 - metadata
 annotations:
-- annotation_object
-- lines
-- notes
-- paragraphs
-- words
+- NoteData
 download_info: |2
 
       To download this dataset, visit:

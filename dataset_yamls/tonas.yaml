@@ -5,9 +5,8 @@ license: "\nThe TONAS dataset is offered free of charge for internal non-commerc
   \ \nto Music Technology Group, Universitat Pompeu Fabra. All Rights Reserved.\n"
 remotes: []
 annotations:
-- f0_automatic
-- f0_corrected
-- notes
+- F0Data
+- NoteData
 download_info: "\n        PLEASE READ CAREFULLY ALL THE INFORMATION SO YOU DON'T MISS\
   \ ANY STEP:\n        Unfortunately, the TONAS dataset is not available to be shared\
   \ openly. However,\n        you can request access to the dataset in the following\

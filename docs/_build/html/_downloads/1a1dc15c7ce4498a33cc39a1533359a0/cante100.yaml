@@ -11,8 +11,8 @@ remotes:
 - metadata
 - README
 annotations:
-- melody
-- notes
+- F0Data
+- NoteData
 download_info: |2
 
           This loader is designed to load the spectrum, as it is available for download.

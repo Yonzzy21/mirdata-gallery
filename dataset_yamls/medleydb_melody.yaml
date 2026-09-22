@@ -3,9 +3,8 @@ license: Creative Commons Attribution Non-Commercial Share-Alike 4.0 (CC BY-NC-S
   4.0).
 remotes: []
 annotations:
-- melody1
-- melody2
-- melody3
+- F0Data
+- MultiF0Data
 download_info: |2
 
       To download this dataset, visit:

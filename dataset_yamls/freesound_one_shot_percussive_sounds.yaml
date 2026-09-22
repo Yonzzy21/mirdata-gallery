@@ -9,8 +9,7 @@ remotes:
 - sound_info_analysis
 - metadata
 - readme
-annotations:
-- file_metadata
+annotations: []
 download_info: null
 bibtex: "\n@inproceedings{ramires2020, \n    author = \"Antonio Ramires and Pritish\
   \ Chandna and Xavier Favory and Emilia Gómez and Xavier Serra\",\n    title = \"\

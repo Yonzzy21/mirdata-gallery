@@ -15,8 +15,8 @@ remotes:
 - annotations_sections
 - metadata
 annotations:
-- beats
-- sections
+- BeatData
+- SectionData
 download_info: |2
 
       Unfortunately the audio files of the RWC-Classical dataset are not available

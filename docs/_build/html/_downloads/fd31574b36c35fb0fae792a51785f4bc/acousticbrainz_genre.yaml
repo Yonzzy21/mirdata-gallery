@@ -15,8 +15,7 @@ remotes:
 - train-ab
 - train-cd
 - train-ef
-annotations:
-- acousticbrainz_metadata
+annotations: []
 download_info: null
 bibtex: |2
 
