@@ -1,6 +1,5 @@
 name: freesound_one_shot_percussive_sounds
-license: |2
-
+license: |-
   The dataset is licensed under The Creative Commons Attribution Non Commercial Share Alike 4.0 International.
   Please check the specific license of each sound by running track.license
 remotes:

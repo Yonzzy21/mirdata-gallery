@@ -1,13 +1,12 @@
 name: idmt_smt_audio_effects
-license: |2
-
+license: |-
   Creative Commons BY-NC-ND 4.0.
   https://creativecommons.org/licenses/by-nc-nd/4.0/
 remotes:
 - full_dataset
 annotations:
-- NoteData
 - Instrument
+- NoteData
 download_info: "\n    IDMT-SMT-Audio-Effects Dataset is available at:\n    https://www.idmt.fraunhofer.de/en/publications/datasets/audio_effects.html\n\
   \    And Zenodo:\n    https://zenodo.org/records/7544032\n    \n    Folder tree:\n\
   \    data_home/\n    ├── Bass monophon/\n    │   ├── Lists\n    │   └── Samples\n\

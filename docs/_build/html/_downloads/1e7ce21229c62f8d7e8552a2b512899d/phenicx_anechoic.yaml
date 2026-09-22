@@ -1,7 +1,5 @@
 name: phenicx_anechoic
-license: |2
-
-  Creative Commons Attribution Non Commercial Share Alike 4.0 International
+license: Creative Commons Attribution Non Commercial Share Alike 4.0 International
 remotes:
 - all
 annotations:

@@ -3,9 +3,9 @@ license: Creative Commons Attribution 4.0 International
 remotes:
 - zenodo
 annotations:
+- F0Data
 - LyricData
 - NoteData
-- F0Data
 download_info: null
 bibtex: "\n@techreport{bittner2021vocadito,\n      title={vocadito: A dataset of solo\
   \ vocals with $f_0$, note, and lyric annotations}, \n      author={Rachel M. Bittner\

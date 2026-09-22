@@ -1,6 +1,6 @@
 name: jtd
-license: "\n\nThe MIT License (MIT)\nCopyright (c) 2023, Huw Cheston\n\nPermission\
-  \ is hereby granted, free of charge, to any person obtaining a copy of this software\
+license: "The MIT License (MIT)\nCopyright (c) 2023, Huw Cheston\n\nPermission is\
+  \ hereby granted, free of charge, to any person obtaining a copy of this software\
   \ and associated \ndocumentation files (the \"Software\"), to deal in the Software\
   \ without restriction, including without limitation the \nrights to use, copy, modify,\
   \ merge, publish, distribute, sublicense, and/or sell copies of the Software, and\
@@ -12,12 +12,12 @@ license: "\n\nThe MIT License (MIT)\nCopyright (c) 2023, Huw Cheston\n\nPermissi
   \ A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR \n\
   COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN\
   \ AN ACTION OF CONTRACT, TORT OR \nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\
-  \ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n"
+  \ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
 remotes:
 - annotations
 annotations:
-- NoteData
 - BeatData
+- NoteData
 - EventData
 download_info: "\nTo download the audio for files for JTD, visit: https://zenodo.org/records/13828030\
   \ and request access.\n\nAfter you've been granted access, press the \"Download\

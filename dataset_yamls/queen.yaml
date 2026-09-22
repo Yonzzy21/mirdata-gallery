@@ -3,9 +3,9 @@ license: Unfortunately we couldn't find the license information for Queen datase
 remotes:
 - annotations
 annotations:
+- SectionData
 - KeyData
 - ChordData
-- SectionData
 download_info: |2
 
           Unfortunately the audio files of Queen dataset are not available

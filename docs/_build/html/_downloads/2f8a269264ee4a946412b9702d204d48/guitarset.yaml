@@ -7,12 +7,12 @@ remotes:
 - audio_mic
 - audio_mix
 annotations:
-- ChordData
-- F0Data
 - BeatData
 - NoteData
-- KeyData
+- ChordData
+- F0Data
 - MultiF0Data
+- KeyData
 download_info: null
 bibtex: |-
   @inproceedings{xi2018guitarset,

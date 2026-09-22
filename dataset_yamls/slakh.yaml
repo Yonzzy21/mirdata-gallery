@@ -1,14 +1,12 @@
 name: slakh
-license: |2
-
-  Creative Commons Attribution 4.0 International
+license: Creative Commons Attribution 4.0 International
 remotes:
 - 2100-redux
 - baby
 annotations:
-- NoteData
 - Instrument
 - MultiF0Data
+- NoteData
 download_info: null
 bibtex: |2
 

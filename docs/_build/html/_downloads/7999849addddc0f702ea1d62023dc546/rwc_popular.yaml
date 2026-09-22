@@ -1,6 +1,5 @@
 name: rwc_popular
-license: |2
-
+license: |-
   From the dataset's owner webpage:
 
   'Users who have submitted the Pledge and received authorization may freely use the database for research purposes
@@ -17,12 +16,12 @@ remotes:
 - annotations_chords
 - annotations_vocal_act
 annotations:
+- BeatData
 - ChordData
 - TempoData
 - EventData
-- BeatData
-- Instrument
 - SectionData
+- Instrument
 download_info: |2
 
       Unfortunately the audio files of the RWC-Popular dataset are not available

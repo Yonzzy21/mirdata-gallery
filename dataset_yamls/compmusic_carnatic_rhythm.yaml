@@ -2,8 +2,8 @@ name: compmusic_carnatic_rhythm
 license: Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 remotes: []
 annotations:
-- Instrument
 - BeatData
+- Instrument
 download_info: "The files of this dataset are shared under request. Please go to:\
   \ https://zenodo.org/record/1264394 and request access, stating\n    the research-related\
   \ use you will give to the dataset. Once the access is granted (it may take, at\

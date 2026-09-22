@@ -4,10 +4,10 @@ remotes:
 - all
 annotations:
 - LyricData
-- TempoData
 - F0Data
-- KeyData
+- TempoData
 - SectionData
+- KeyData
 download_info: null
 bibtex: |2
 

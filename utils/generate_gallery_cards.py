@@ -22,7 +22,10 @@ for yml_path in sorted(yaml_dir.glob("*.yaml")):
 
     name = data.get("name", yml_path.stem)
     license_str = data.get("license", "Not specified")
-    
+    if isinstance(license_str, str):
+    # Collapse multi-line/whitespace into a single clean line
+        license_str = " ".join(license_str.split())
+
     # 1. Format annotations as inline code tags
     annotations_list = data.get("annotations")
     if annotations_list and isinstance(annotations_list, list):

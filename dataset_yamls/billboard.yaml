@@ -1,6 +1,5 @@
 name: billboard
-license: |2
-
+license: |-
   This data is released under a Creative Commons 0 license, effectively dedicating it to
   the public domain. More information about this dedication and your rights, please see the
   details here: http://creativecommons.org/publicdomain/zero/1.0/ and
@@ -12,8 +11,8 @@ remotes:
 - annotation_mirex13
 - annotation_chordino
 annotations:
-- ChordData
 - SectionData
+- ChordData
 download_info: null
 bibtex: "\n@inproceedings{burgoyne_billboard,\nauthor = {Burgoyne, John Ashley and\
   \ Wild, Jonathan and Fujinaga, Ichiro},\nyear = {2011},\ntitle = {An {Expert} {Ground}\

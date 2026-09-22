@@ -3,8 +3,8 @@ license: Creative Commons Attribution Non-Commercial Share-Alike 4.0 (CC BY-NC-S
   4.0).
 remotes: []
 annotations:
-- Instrument
 - F0Data
+- Instrument
 - MultiF0Data
 download_info: |2
 

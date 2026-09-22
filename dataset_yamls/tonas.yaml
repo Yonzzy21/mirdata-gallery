@@ -1,12 +1,12 @@
 name: tonas
-license: "\nThe TONAS dataset is offered free of charge for internal non-commercial\
+license: "The TONAS dataset is offered free of charge for internal non-commercial\
   \ use only. You can not redistribute it nor \nmodify it. Dataset by COFLA team.\
   \ Copyright © 2012 COFLA project, Universidad de Sevilla. Distribution rights granted\
-  \ \nto Music Technology Group, Universitat Pompeu Fabra. All Rights Reserved.\n"
+  \ \nto Music Technology Group, Universitat Pompeu Fabra. All Rights Reserved."
 remotes: []
 annotations:
-- NoteData
 - F0Data
+- NoteData
 download_info: "\n        PLEASE READ CAREFULLY ALL THE INFORMATION SO YOU DON'T MISS\
   \ ANY STEP:\n        Unfortunately, the TONAS dataset is not available to be shared\
   \ openly. However,\n        you can request access to the dataset in the following\

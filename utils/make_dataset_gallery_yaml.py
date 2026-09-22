@@ -87,6 +87,9 @@ def collect_dataset_info(dataset_name=None):
             
             # Extract basic info
             license_info = getattr(dataset, "_license_info", "Not specified")
+            #mitigate new line issue with license
+            if isinstance(license_info, str):
+                license_info = license_info.strip()
             download_info = getattr(dataset, "_download_info", None)
             bibtex = getattr(dataset, "bibtex", None)
             remotes = list(dataset.remotes.keys()) if dataset.remotes else []
