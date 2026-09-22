@@ -39,16 +39,19 @@ FALLBACK_MAP = {
     "phrase": "LyricData",
     "tonic": "KeyData",
     "event": "EventData",
+    "instrument": "Instrument",
 }
 
 
 def get_annotation_class_name(attr_name,item):
     """Extracts the class name (e.g. 'BeatData') if the property returns a mirdata Annotation."""
-    func = getattr(item, "func", None)
+    # 1. Standard @property uses .fget, @cached_property uses .func
+
+    func = getattr(item, "func", None)or getattr(item, "fget", None)
     if not func:
         return None
     # 1. first - Get return type hint from the function
-    ret = getattr(func, "__annotations__", {}).get("return")
+    ret = getattr(func, "__annotations__", {}).get("return") 
     if ret:
         for arg in typing.get_args(ret):
             if arg is not type(None):
@@ -97,10 +100,14 @@ def collect_dataset_info(dataset_name=None):
                     if attr.startswith("_"):
                         continue
                     item = getattr(track_class, attr, None)
-                    if isinstance(item, mirdata.core.cached_property):
+                    if isinstance(item,(property, mirdata.core.cached_property)):
                         ann_cls = get_annotation_class_name(attr,item)
                         if ann_cls:
                             annotations.add(ann_cls)
+            # If the dataset is a dedicated genre dataset (e.g. acousticbrainz_genre, gtzan_genre)
+            if name.endswith("_genre"):
+                annotations.add("Genre")
+
             successful.append({
                 "name": name,
                 "license": license_info,

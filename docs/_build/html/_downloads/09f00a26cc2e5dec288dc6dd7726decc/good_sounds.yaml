@@ -7,6 +7,7 @@ remotes:
 - takes
 - audios
 annotations:
+- Instrument
 - F0Data
 download_info: null
 bibtex: |-

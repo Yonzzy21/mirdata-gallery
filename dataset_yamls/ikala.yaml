@@ -7,9 +7,10 @@ remotes:
 - metadata
 - notes_pyin
 annotations:
-- F0Data
-- NoteData
 - LyricData
+- Instrument
+- NoteData
+- F0Data
 download_info: |2
 
       Unfortunately most of the iKala dataset is not available for download.

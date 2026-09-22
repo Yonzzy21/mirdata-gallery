@@ -18,6 +18,7 @@ remotes:
 - coveranalysis_madmom
 - coveranalysis_mfcc
 annotations:
+- Instrument
 - KeyData
 download_info: null
 bibtex: |-

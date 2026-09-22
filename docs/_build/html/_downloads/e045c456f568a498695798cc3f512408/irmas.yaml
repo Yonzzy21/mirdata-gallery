@@ -5,7 +5,8 @@ remotes:
 - testing_data_1
 - testing_data_2
 - testing_data_3
-annotations: []
+annotations:
+- Instrument
 download_info: null
 bibtex: |2
 

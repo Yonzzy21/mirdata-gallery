@@ -6,7 +6,8 @@ license: |
       * No adaptations nor derivative works
       * Attribution to Epidemic Sound and the authors as it is indicated in the ”citation” section.
 remotes: []
-annotations: []
+annotations:
+- EventDataExtended
 download_info: |
   BAF dataset is only available upon request. To download the audio request access in this link: https://doi.org/10.5281/zenodo.6868083. Then unzip the audio into the baf general dataset folder for the rest of annotations and files. Please include, in the justification field, your academic affiliation (if you have one) and a brief description of your research topics and why you would like to use this dataset.
       baf/

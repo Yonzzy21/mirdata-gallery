@@ -2,7 +2,8 @@ name: openmic2018
 license: Creative Commons Attribution 4.0 International
 remotes:
 - remote_data
-annotations: []
+annotations:
+- Instrument
 download_info: null
 bibtex: |2
 

@@ -7,6 +7,7 @@ remotes:
 - baby
 annotations:
 - NoteData
+- Instrument
 - MultiF0Data
 download_info: null
 bibtex: |2

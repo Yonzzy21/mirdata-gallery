@@ -2,7 +2,8 @@ name: four_way_tabla
 license: Creative Commons Attribution 4.0 International License.
 remotes:
 - remote_data
-annotations: []
+annotations:
+- BeatData
 download_info: null
 bibtex: |-
   @article{RohitMA2021,

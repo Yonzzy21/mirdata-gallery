@@ -8,6 +8,7 @@ remotes:
 annotations:
 - BeatData
 - TempoData
+- Genre
 download_info: null
 bibtex: |-
   @article{tzanetakis2002gtzan,

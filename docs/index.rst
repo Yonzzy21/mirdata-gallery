@@ -9,7 +9,7 @@ acousticbrainz_genre
 --------------------
 
 
-* **Annotations:** *None*
+* **Annotations:** ``Genre``
 * **License:** 
 This dataset is composed of 4 subdatasets. Three of them are Creative Commons Attribution 
 Non Commercial Share Alike 4.0 International and the other one is non-comercial. Details 
@@ -85,7 +85,7 @@ baf
 ---
 
 
-* **Annotations:** *None*
+* **Annotations:** ``EventDataExtended``
 * **License:** Given the different ownership of the elements of the dataset, the dataset is licensed under the following conditions:
     * User's access request
     * Research only, non-commercial purposes
@@ -326,7 +326,7 @@ beatles
 -------
 
 
-* **Annotations:** ``BeatData``, ``KeyData``, ``SectionData``, ``ChordData``
+* **Annotations:** ``KeyData``, ``ChordData``, ``BeatData``, ``SectionData``
 * **License:** Unfortunately we couldn't find the license information for the Beatles dataset.
 * **Downloadable Remotes:** ``annotations``
 * **YAML File:** :download:`beatles.yaml <../dataset_yamls/beatles.yaml>`
@@ -377,7 +377,7 @@ beatport_key
 ------------
 
 
-* **Annotations:** ``TempoData``, ``KeyData``
+* **Annotations:** ``KeyData``, ``TempoData``
 * **License:** Creative Commons Attribution Share Alike 4.0 International.
 * **Downloadable Remotes:** ``keys``, ``metadata``, ``audio``
 * **YAML File:** :download:`beatport_key.yaml <../dataset_yamls/beatport_key.yaml>`
@@ -432,7 +432,7 @@ billboard
 ---------
 
 
-* **Annotations:** ``SectionData``, ``ChordData``
+* **Annotations:** ``ChordData``, ``SectionData``
 * **License:** 
 This data is released under a Creative Commons 0 license, effectively dedicating it to
 the public domain. More information about this dedication and your rights, please see the
@@ -584,7 +584,7 @@ cante100
 --------
 
 
-* **Annotations:** ``F0Data``, ``NoteData``
+* **Annotations:** ``NoteData``, ``F0Data``
 * **License:** 
 The provided datasets are offered free of charge for internal non-commercial use.
 We do not grant any rights for redistribution or modification. All data collections
@@ -697,7 +697,7 @@ compmusic_carnatic_rhythm
 -------------------------
 
 
-* **Annotations:** ``BeatData``
+* **Annotations:** ``Instrument``, ``BeatData``
 * **License:** Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 * **Downloadable Remotes:** *No direct download available*
 * **YAML File:** :download:`compmusic_carnatic_rhythm.yaml <../dataset_yamls/compmusic_carnatic_rhythm.yaml>`
@@ -856,7 +856,7 @@ compmusic_hindustani_rhythm
 ---------------------------
 
 
-* **Annotations:** ``BeatData``
+* **Annotations:** ``Instrument``, ``BeatData``
 * **License:** Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 * **Downloadable Remotes:** *No direct download available*
 * **YAML File:** :download:`compmusic_hindustani_rhythm.yaml <../dataset_yamls/compmusic_hindustani_rhythm.yaml>`
@@ -1172,7 +1172,7 @@ compmusic_otmm_makam
 --------------------
 
 
-* **Annotations:** ``F0Data``
+* **Annotations:** ``KeyData``, ``F0Data``
 * **License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 * **Downloadable Remotes:** ``all``
 * **YAML File:** :download:`compmusic_otmm_makam.yaml <../dataset_yamls/compmusic_otmm_makam.yaml>`
@@ -1399,7 +1399,7 @@ da_tacos
 --------
 
 
-* **Annotations:** ``KeyData``
+* **Annotations:** ``Instrument``, ``KeyData``
 * **License:** 
 Creative Commons Attribution Non Commercial Share Alike 4.0 International
 
@@ -1523,7 +1523,7 @@ dagstuhl_choirset
 -----------------
 
 
-* **Annotations:** ``F0Data``, ``NoteData``
+* **Annotations:** ``NoteData``, ``F0Data``
 * **License:** 
 Creative Commons Attribution 4.0 International
 
@@ -1881,7 +1881,7 @@ fma_keys
 --------
 
 
-* **Annotations:** *None*
+* **Annotations:** ``KeyData``
 * **License:** Creative Commons Attribution 4.0 International
 * **Downloadable Remotes:** ``metadata``, ``tracks-000-019``, ``tracks-020-039``, ``tracks-040-049``, ``tracks-050-059``, ``tracks-060-069``, ``tracks-070-079``, ``tracks-080-089``, ``tracks-090-099``, ``tracks-100-109``, ``tracks-110-124``
 * **YAML File:** :download:`fma_keys.yaml <../dataset_yamls/fma_keys.yaml>`
@@ -1954,7 +1954,7 @@ four_way_tabla
 --------------
 
 
-* **Annotations:** *None*
+* **Annotations:** ``BeatData``
 * **License:** Creative Commons Attribution 4.0 International License.
 * **Downloadable Remotes:** ``remote_data``
 * **YAML File:** :download:`four_way_tabla.yaml <../dataset_yamls/four_way_tabla.yaml>`
@@ -2085,7 +2085,7 @@ giantsteps_key
 --------------
 
 
-* **Annotations:** ``TempoData``, ``KeyData``
+* **Annotations:** ``KeyData``, ``TempoData``
 * **License:** Creative Commons Attribution Share Alike 4.0 International.
 * **Downloadable Remotes:** ``audio``, ``keys``, ``metadata``
 * **YAML File:** :download:`giantsteps_key.yaml <../dataset_yamls/giantsteps_key.yaml>`
@@ -2258,7 +2258,7 @@ good_sounds
 -----------
 
 
-* **Annotations:** ``F0Data``
+* **Annotations:** ``Instrument``, ``F0Data``
 * **License:** Creative Commons Attribution Share Alike 4.0 International.
 * **Downloadable Remotes:** ``packs``, ``ratings``, ``sounds``, ``takes``, ``audios``
 * **YAML File:** :download:`good_sounds.yaml <../dataset_yamls/good_sounds.yaml>`
@@ -2308,7 +2308,7 @@ groove_midi
 -----------
 
 
-* **Annotations:** ``BeatData``, ``NoteData``, ``EventData``
+* **Annotations:** ``NoteData``, ``BeatData``, ``TempoData``, ``EventData``
 * **License:** Creative Commons Attribution 4.0 International (CC BY 4.0) License.
 * **Downloadable Remotes:** ``all``
 * **YAML File:** :download:`groove_midi.yaml <../dataset_yamls/groove_midi.yaml>`
@@ -2380,7 +2380,7 @@ gtzan_genre
 -----------
 
 
-* **Annotations:** ``BeatData``, ``TempoData``
+* **Annotations:** ``BeatData``, ``TempoData``, ``Genre``
 * **License:** Unfortunately we couldn't find the license information for the GTZAN_genre dataset.
 * **Downloadable Remotes:** ``all``, ``mini``, ``tempo_beat_annotations``
 * **YAML File:** :download:`gtzan_genre.yaml <../dataset_yamls/gtzan_genre.yaml>`
@@ -2421,7 +2421,7 @@ guitarset
 ---------
 
 
-* **Annotations:** ``NoteData``, ``MultiF0Data``, ``BeatData``, ``ChordData``, ``F0Data``, ``KeyData``
+* **Annotations:** ``ChordData``, ``F0Data``, ``BeatData``, ``NoteData``, ``KeyData``, ``MultiF0Data``
 * **License:** MIT License.
 * **Downloadable Remotes:** ``annotations``, ``audio_hex_debleeded``, ``audio_hex_original``, ``audio_mic``, ``audio_mix``
 * **YAML File:** :download:`guitarset.yaml <../dataset_yamls/guitarset.yaml>`
@@ -2570,7 +2570,7 @@ idmt_smt_audio_effects
 ----------------------
 
 
-* **Annotations:** *None*
+* **Annotations:** ``NoteData``, ``Instrument``
 * **License:** 
 Creative Commons BY-NC-ND 4.0.
 https://creativecommons.org/licenses/by-nc-nd/4.0/
@@ -2667,7 +2667,7 @@ ikala
 -----
 
 
-* **Annotations:** ``F0Data``, ``NoteData``, ``LyricData``
+* **Annotations:** ``LyricData``, ``Instrument``, ``NoteData``, ``F0Data``
 * **License:** 
 When it was distributed, Ikala used to have a custom license.
 Visit http://mac.citi.sinica.edu.tw/ikala/ for more details.
@@ -2728,7 +2728,7 @@ irmas
 -----
 
 
-* **Annotations:** *None*
+* **Annotations:** ``Instrument``
 * **License:** Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 * **Downloadable Remotes:** ``training_data``, ``testing_data_1``, ``testing_data_2``, ``testing_data_3``
 * **YAML File:** :download:`irmas.yaml <../dataset_yamls/irmas.yaml>`
@@ -2845,7 +2845,7 @@ jtd
 ---
 
 
-* **Annotations:** ``BeatData``, ``NoteData``, ``EventData``
+* **Annotations:** ``NoteData``, ``BeatData``, ``EventData``
 * **License:** 
 
 The MIT License (MIT)
@@ -3096,7 +3096,7 @@ medley_solos_db
 ---------------
 
 
-* **Annotations:** *None*
+* **Annotations:** ``Instrument``
 * **License:** Creative Commons Attribution 4.0 International.
 * **Downloadable Remotes:** ``annotations``, ``audio``
 * **YAML File:** :download:`medley_solos_db.yaml <../dataset_yamls/medley_solos_db.yaml>`
@@ -3150,7 +3150,7 @@ medleydb_melody
 ---------------
 
 
-* **Annotations:** ``F0Data``, ``MultiF0Data``
+* **Annotations:** ``Instrument``, ``F0Data``, ``MultiF0Data``
 * **License:** Creative Commons Attribution Non-Commercial Share-Alike 4.0 (CC BY-NC-SA 4.0).
 * **Downloadable Remotes:** *No direct download available*
 * **YAML File:** :download:`medleydb_melody.yaml <../dataset_yamls/medleydb_melody.yaml>`
@@ -3204,7 +3204,7 @@ medleydb_pitch
 --------------
 
 
-* **Annotations:** ``F0Data``, ``NoteData``
+* **Annotations:** ``NoteData``, ``Instrument``, ``F0Data``
 * **License:** Creative Commons Attribution Non-Commercial Share-Alike 4.0 (CC BY-NC-SA 4.0).
 * **Downloadable Remotes:** ``notes_pyin``
 * **YAML File:** :download:`medleydb_pitch.yaml <../dataset_yamls/medleydb_pitch.yaml>`
@@ -3420,7 +3420,7 @@ openmic2018
 -----------
 
 
-* **Annotations:** *None*
+* **Annotations:** ``Instrument``
 * **License:** Creative Commons Attribution 4.0 International
 * **Downloadable Remotes:** ``remote_data``
 * **YAML File:** :download:`openmic2018.yaml <../dataset_yamls/openmic2018.yaml>`
@@ -3506,7 +3506,7 @@ orchset
 -------
 
 
-* **Annotations:** ``F0Data``
+* **Annotations:** ``Instrument``, ``F0Data``
 * **License:** Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 * **Downloadable Remotes:** ``all``
 * **YAML File:** :download:`orchset.yaml <../dataset_yamls/orchset.yaml>`
@@ -3631,7 +3631,7 @@ queen
 -----
 
 
-* **Annotations:** ``KeyData``, ``SectionData``, ``ChordData``
+* **Annotations:** ``KeyData``, ``ChordData``, ``SectionData``
 * **License:** Unfortunately we couldn't find the license information for Queen dataset.
 * **Downloadable Remotes:** ``annotations``
 * **YAML File:** :download:`queen.yaml <../dataset_yamls/queen.yaml>`
@@ -3805,7 +3805,7 @@ rwc_jazz
 --------
 
 
-* **Annotations:** ``BeatData``, ``SectionData``
+* **Annotations:** ``Instrument``, ``BeatData``, ``SectionData``
 * **License:** 
 From the dataset's owner webpage:
 
@@ -3901,7 +3901,7 @@ rwc_popular
 -----------
 
 
-* **Annotations:** ``BeatData``, ``SectionData``, ``EventData``, ``ChordData``
+* **Annotations:** ``ChordData``, ``TempoData``, ``EventData``, ``BeatData``, ``Instrument``, ``SectionData``
 * **License:** 
 From the dataset's owner webpage:
 
@@ -4045,7 +4045,7 @@ saraga_carnatic
 ---------------
 
 
-* **Annotations:** ``TempoData``, ``SectionData``, ``F0Data``, ``KeyData``, ``LyricData``
+* **Annotations:** ``LyricData``, ``TempoData``, ``F0Data``, ``KeyData``, ``SectionData``
 * **License:** Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 * **Downloadable Remotes:** ``all``
 * **YAML File:** :download:`saraga_carnatic.yaml <../dataset_yamls/saraga_carnatic.yaml>`
@@ -4107,7 +4107,7 @@ saraga_hindustani
 -----------------
 
 
-* **Annotations:** ``TempoData``, ``SectionData``, ``F0Data``, ``KeyData``, ``LyricData``
+* **Annotations:** ``LyricData``, ``TempoData``, ``F0Data``, ``KeyData``, ``SectionData``
 * **License:** Creative Commons Attribution Non Commercial Share Alike 4.0 International.
 * **Downloadable Remotes:** ``all``
 * **YAML File:** :download:`saraga_hindustani.yaml <../dataset_yamls/saraga_hindustani.yaml>`
@@ -4169,7 +4169,7 @@ scms
 ----
 
 
-* **Annotations:** ``EventData``, ``F0Data``
+* **Annotations:** ``KeyData``, ``F0Data``, ``EventData``
 * **License:** Creative Commons Attribution Non-Commercial Share-Alike 4.0 (CC BY-NC-SA 4.0).
 * **Downloadable Remotes:** ``scms``
 * **YAML File:** :download:`scms.yaml <../dataset_yamls/scms.yaml>`
@@ -4220,7 +4220,7 @@ slakh
 -----
 
 
-* **Annotations:** ``NoteData``, ``MultiF0Data``
+* **Annotations:** ``NoteData``, ``Instrument``, ``MultiF0Data``
 * **License:** 
 Creative Commons Attribution 4.0 International
 
@@ -4274,7 +4274,7 @@ tinysol
 -------
 
 
-* **Annotations:** *None*
+* **Annotations:** ``Instrument``, ``F0Data``
 * **License:** Creative Commons Attribution 4.0 International Public License.
 * **Downloadable Remotes:** ``audio``, ``annotations``
 * **YAML File:** :download:`tinysol.yaml <../dataset_yamls/tinysol.yaml>`
@@ -4423,7 +4423,7 @@ tonas
 -----
 
 
-* **Annotations:** ``F0Data``, ``NoteData``
+* **Annotations:** ``NoteData``, ``F0Data``
 * **License:** 
 The TONAS dataset is offered free of charge for internal non-commercial use only. You can not redistribute it nor 
 modify it. Dataset by COFLA team. Copyright © 2012 COFLA project, Universidad de Sevilla. Distribution rights granted 
@@ -4524,7 +4524,7 @@ vocadito
 --------
 
 
-* **Annotations:** ``F0Data``, ``NoteData``, ``LyricData``
+* **Annotations:** ``LyricData``, ``NoteData``, ``F0Data``
 * **License:** Creative Commons Attribution 4.0 International
 * **Downloadable Remotes:** ``zenodo``
 * **YAML File:** :download:`vocadito.yaml <../dataset_yamls/vocadito.yaml>`

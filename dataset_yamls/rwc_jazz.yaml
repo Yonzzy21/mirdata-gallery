@@ -15,6 +15,7 @@ remotes:
 - annotations_beat
 - annotations_sections
 annotations:
+- Instrument
 - BeatData
 - SectionData
 download_info: |2

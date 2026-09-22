@@ -16,8 +16,8 @@ license: "\n\nThe MIT License (MIT)\nCopyright (c) 2023, Huw Cheston\n\nPermissi
 remotes:
 - annotations
 annotations:
-- BeatData
 - NoteData
+- BeatData
 - EventData
 download_info: "\nTo download the audio for files for JTD, visit: https://zenodo.org/records/13828030\
   \ and request access.\n\nAfter you've been granted access, press the \"Download\

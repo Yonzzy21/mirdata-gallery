@@ -3,7 +3,9 @@ license: Creative Commons Attribution 4.0 International Public License.
 remotes:
 - audio
 - annotations
-annotations: []
+annotations:
+- Instrument
+- F0Data
 download_info: null
 bibtex: |-
   @inproceedings{cella2020preprint,

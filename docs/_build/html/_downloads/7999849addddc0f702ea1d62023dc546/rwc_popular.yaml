@@ -17,10 +17,12 @@ remotes:
 - annotations_chords
 - annotations_vocal_act
 annotations:
-- BeatData
-- SectionData
-- EventData
 - ChordData
+- TempoData
+- EventData
+- BeatData
+- Instrument
+- SectionData
 download_info: |2
 
       Unfortunately the audio files of the RWC-Popular dataset are not available

@@ -4,8 +4,8 @@ remotes:
 - annotations
 annotations:
 - KeyData
-- SectionData
 - ChordData
+- SectionData
 download_info: |2
 
           Unfortunately the audio files of Queen dataset are not available
