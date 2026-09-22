@@ -1,3 +1,8 @@
+/* Hide the redundant default Sphinx RTD search box */
+div.wy-side-nav-search form#rtd-search-form {
+    display: none;
+}
+
 div.wy-side-nav-search {
     background: #FFFFFF;
 }
@@ -81,8 +86,8 @@ div.wy-nav-content {
 }
 
 .filter-search:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    border-color: #a054d8;
+    box-shadow: 0 0 0 3px rgba(160, 84, 216, 0.15);
 }
 
 .filter-header-bar {
@@ -99,7 +104,7 @@ div.wy-nav-content {
 .filter-reset-btn {
     background: none;
     border: none;
-    color: #2563eb;
+    color: #a054d8;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 500;
@@ -116,6 +121,7 @@ div.wy-nav-content {
     gap: 6px;
     max-height: 240px;
     overflow-y: auto;
+    padding-top: 4px;
     padding-right: 2px;
 }
 
@@ -134,13 +140,14 @@ div.wy-nav-content {
 }
 
 .filter-pill:hover {
-    background: #e2e8f0;
-    color: #1e293b;
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
 }
 
 .filter-pill.active {
-    background: #2563eb;
-    border-color: #2563eb;
+    background: #a054d8;
+    border-color: #a054d8;
     color: #ffffff;
 }
 
@@ -177,27 +184,31 @@ div.wy-nav-content {
 }
 
 .dataset-item-btn:hover {
-    border-color: #93c5fd;
-    background: #f8fafc;
+    border-color: #d8b4fe;
+    background: #faf5ff;
     transform: translateY(-1px);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 8px rgba(160, 84, 216, 0.08);
+}
+
+.dataset-item-btn:hover .dataset-item-title {
+    color: #a054d8;
 }
 
 .dataset-item-btn.active {
-    border-color: #2563eb;
-    background: #eff6ff;
-    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.15);
+    border-color: #a054d8;
+    background: #faf5ff;
+    box-shadow: 0 2px 10px rgba(160, 84, 216, 0.15);
 }
 
 .dataset-item-title {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #1e293b;
     word-break: break-word;
 }
 
 .dataset-item-btn.active .dataset-item-title {
-    color: #1d4ed8;
+    color: #7928ca;
 }
 
 .dataset-item-meta {
@@ -212,16 +223,16 @@ div.wy-nav-content {
     color: #475569;
     padding: 2px 6px;
     border-radius: 4px;
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
 .dataset-badge-ann {
-    background: #e0f2fe;
-    color: #0369a1;
+    background: #f3e8ff;
+    color: #7e22ce;
     padding: 2px 6px;
     border-radius: 4px;
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
@@ -251,8 +262,8 @@ div.wy-nav-content {
     margin-bottom: 16px;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #2563eb;
-    border-bottom: 2px solid #eff6ff;
+    color: #a054d8;
+    border-bottom: 2px solid #faf5ff;
     padding-bottom: 8px;
 }
 
@@ -275,10 +286,10 @@ div.wy-nav-content {
 
 /* Badge pills for annotation tags */
 .gallery-cards-information>section code {
-    background-color: #eff6ff;
-    color: #2563eb;
-    border: 1px solid #dbeafe;
-    border-radius: 9999px;
+    background-color: #faf5ff;
+    color: #7928ca;
+    border: 1px solid #e9d5ff;
+    border-radius: 10px;
     padding: 2px 10px;
     font-size: 0.85em;
     font-weight: 500;
@@ -313,9 +324,136 @@ div.wy-nav-content {
 }
 
 .gallery-cards-information>section .admonition .admonition-title::before {
-    color: #3b82f6 !important;
+    color: #a054d8 !important;
 }
 
 .gallery-cards-information>section .toggle-button {
     color: #64748b !important;
+}
+
+
+
+/* ==========================================================================
+   Distinct Colors per Annotation Type
+   ========================================================================== */
+/* 1. Rhythm: BeatData & TempoData (Orange / Amber) */
+[data-ann="BeatData"],
+[data-ann="TempoData"] {
+    background-color: #fff7ed !important;
+    color: #c2410c !important;
+    border-color: #fed7aa !important;
+}
+
+.filter-pill[data-ann="BeatData"].active,
+.filter-pill[data-ann="TempoData"].active {
+    background-color: #ea580c !important;
+    color: #ffffff !important;
+    border-color: #ea580c !important;
+}
+
+/* 2. Harmony: ChordData & KeyData (Emerald Green) */
+[data-ann="ChordData"],
+[data-ann="KeyData"] {
+    background-color: #ecfdf5 !important;
+    color: #047857 !important;
+    border-color: #a7f3d0 !important;
+}
+
+.filter-pill[data-ann="ChordData"].active,
+.filter-pill[data-ann="KeyData"].active {
+    background-color: #059669 !important;
+    color: #ffffff !important;
+    border-color: #059669 !important;
+}
+
+/* 3. Pitch & Melody: NoteData, F0Data & MultiF0Data (Sky Blue) */
+[data-ann="NoteData"],
+[data-ann="F0Data"],
+[data-ann="MultiF0Data"] {
+    background-color: #f0f9ff !important;
+    color: #0573e8 !important;
+    border-color: #bae6fd !important;
+}
+
+.filter-pill[data-ann="NoteData"].active,
+.filter-pill[data-ann="F0Data"].active,
+.filter-pill[data-ann="MultiF0Data"].active {
+    background-color: #0284c7 !important;
+    color: #ffffff !important;
+    border-color: #0284c7 !important;
+}
+
+/* 4. Structure: SectionData (Indigo) */
+[data-ann="SectionData"] {
+    background-color: #eef2ff !important;
+    color: #4338ca !important;
+    border-color: #c7d2fe !important;
+}
+
+.filter-pill[data-ann="SectionData"].active {
+    background-color: #4f46e5 !important;
+    color: #ffffff !important;
+    border-color: #4f46e5 !important;
+}
+
+/* 5. Lyrics: LyricData (Rose) */
+[data-ann="LyricData"] {
+    background-color: #fff1f2 !important;
+    color: #be123c !important;
+    border-color: #fecdd3 !important;
+}
+
+.filter-pill[data-ann="LyricData"].active {
+    background-color: #e11d48 !important;
+    color: #ffffff !important;
+    border-color: #e11d48 !important;
+}
+
+/* 6. Genre: Genre (mirdata Purple) */
+[data-ann="Genre"] {
+    background-color: #faf5ff !important;
+    color: #7e22ce !important;
+    border-color: #e9d5ff !important;
+}
+
+.filter-pill[data-ann="Genre"].active {
+    background-color: #a054d8 !important;
+    color: #ffffff !important;
+    border-color: #a054d8 !important;
+}
+
+/* 7. Instrument: Instrument (Teal) */
+[data-ann="Instrument"] {
+    background-color: #f0fdfa !important;
+    color: #0f766e !important;
+    border-color: #99f6e4 !important;
+}
+
+.filter-pill[data-ann="Instrument"].active {
+    background-color: #0d9488 !important;
+    color: #ffffff !important;
+    border-color: #0d9488 !important;
+}
+
+/* 8. Events: EventData & EventDataExtended (Slate) */
+[data-ann="EventData"],
+[data-ann="EventDataExtended"] {
+    background-color: #f8fafc !important;
+    color: #475569 !important;
+    border-color: #cbd5e1 !important;
+}
+
+.filter-pill[data-ann="EventData"].active,
+.filter-pill[data-ann="EventDataExtended"].active {
+    background-color: #475569 !important;
+    color: #ffffff !important;
+    border-color: #475569 !important;
+}
+
+
+/* 2. License Pill Active (Solid slate/gray when clicked & selected) */
+.filter-pill:not([data-ann]).active {
+    background-color: #475569 !important;
+    color: #ffffff !important;
+    border-color: #475569 !important;
 }

@@ -52,7 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // Only grab real annotations (ignores Downloadable Remotes, README, etc.)
             if (label.startsWith("Annotations")) {
                 const annEls = li.querySelectorAll("code");
-                annotations = Array.from(annEls).map((el) => el.textContent.trim());
+                annotations = Array.from(annEls).map((el) => {
+                    const val = el.textContent.trim();
+                    el.setAttribute("data-ann", val); //Tag each card badge
+                    return val;
+                });
             } else if (label.startsWith("License")) {
                 const clone = li.cloneNode(true);
                 const st = clone.querySelector("strong");
@@ -159,6 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .forEach((ann) => {
             const pill = document.createElement("button");
             pill.className = "filter-pill";
+            pill.setAttribute("data-ann", ann); // Tag sidebar filter pills
             pill.innerHTML = `${ann} <span class="count">${annCounts[ann]}</span>`;
             pill.addEventListener("click", () => {
                 if (state.selectedAnnotations.has(ann)) {
