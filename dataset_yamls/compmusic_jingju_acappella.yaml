@@ -78,4 +78,6 @@ docstring: |+
           For the license of .wav audio ending with ‘qm’ from C4DM Queen Mary University of London, please refer to
           this page http://isophonics.org/SingingVoiceDataset
 
-...
+summary: This dataset includes a cappella Jingju singing recordings with annotations
+  for phrases, syllables, and phonemes in both pinyin and X-SAMPA, aimed at tasks
+  like boundary detection and alignment.

@@ -34,4 +34,6 @@ docstring: |+
       contains 10 genres, each represented by 100 tracks. The tracks are all
       22050 Hz mono 16-bit audio files in .wav format.
 
-...
+summary: The GTZAN Genre Dataset includes 1000 30-second audio tracks (10 genres,
+  100 tracks each) in .wav format. Annotations provide genre labels for each track,
+  primarily supporting genre classification tasks.

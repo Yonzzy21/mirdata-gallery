@@ -58,3 +58,6 @@ docstring: |
 
       This work has received funding from the European Union's Horizon 2020 research and innovation programme under
       grant agreement No 688382 "AudioCommons".
+summary: The dataset includes 18,486 full audio tracks from Jamendo with 195 mood/theme
+  tags, suitable for emotion and theme recognition tasks in MIR, providing ground-truth
+  tags for each track.

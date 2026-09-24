@@ -99,4 +99,6 @@ docstring: |2+
 
       For more details, please visit: http://www.cofla-project.com/?page_id=134
 
-...
+summary: cante100 includes 100 tracks with annotations on vocal sections, F0, and
+  automatic note transcription; it supports tasks like style classification and vocal
+  detection.

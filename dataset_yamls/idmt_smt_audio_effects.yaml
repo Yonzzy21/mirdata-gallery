@@ -61,3 +61,7 @@ docstring: |
 
       DOI
       10.5281/zenodo.7544032
+summary: This dataset includes 55,044 mono and stereo WAV files of electric guitar
+  and bass notes with 11 types of audio effects, covering 30 hours of audio. Annotations
+  provide details on effects, instruments, and settings, facilitating the task of
+  detecting and classifying audio effects.

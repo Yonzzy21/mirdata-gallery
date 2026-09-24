@@ -71,4 +71,6 @@ docstring: |+
 
       For more details, please visit: https://www.upf.edu/web/mtg/phenicx-anechoic
 
-...
+summary: The PHENICX-Anechoic Dataset includes denoised anechoic recordings of symphonic
+  music passages, with annotations for musical note onsets and offsets, suitable for
+  tasks like score-informed source separation and multi-pitch estimation.

@@ -40,4 +40,5 @@ docstring: |+
 
       For more details, please visit: https://medleydb.weebly.com
 
-...
+summary: MedleyDB melody includes multitrack recordings with melody f0 annotations
+  for 20 songs, aimed at melody extraction research.

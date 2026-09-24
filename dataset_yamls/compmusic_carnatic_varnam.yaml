@@ -58,3 +58,6 @@ docstring: |
       The distinct advantage of this dataset is the free availability of the audio content. Along with the annotations,
       it can be used for melodic analyses: characterizing intonation, motif discovery and tonic identification. The
       availability of a machine readable notation files allows the dataset to be used for audio-score alignment.
+summary: The dataset includes 28 solo Carnatic varnam recordings featuring 7 rāgas,
+  with taala cycle annotations and machine-readable notations. It supports intonation
+  analysis and audio-score alignment.

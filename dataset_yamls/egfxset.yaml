@@ -111,3 +111,8 @@ docstring: |
       This dataset was conceived during Iran Roman's "Deep Learning for Music Information Retrieval" course
       imparted in the postgraduate studies in music technology at the UNAM (Universidad Nacional Autónoma de México).
       The result is a combined effort between two UNAM postgraduate students (Hegel Pedroza and Gerardo Meza) and Iran Roman(NYU).
+summary: EGFxSet includes 8,970 5-second audio recordings of electric guitar tones
+  processed through 12 real guitar effects, covering 138 notes across 5 pickup configurations.
+  Annotations provide detailed effect settings and guitar parameters. The primary
+  MIR task involves analyzing and classifying these audio samples based on their tonal
+  and effect characteristics.

@@ -85,4 +85,5 @@ docstring: |+
 
       For more details, please visit: https://staff.aist.go.jp/m.goto/RWC-MDB/rwc-mdb-c.html
 
-...
+summary: The RWC Classical Dataset includes 50 classical music pieces with annotations
+  for beats, providing information for tasks such as rhythm analysis and beat tracking.

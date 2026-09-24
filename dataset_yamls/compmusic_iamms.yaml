@@ -48,4 +48,6 @@ docstring: |+
       For more information about the dataset as well as IAM and annotations, please refer to:
       https://zenodo.org/records/16631794, where a really detailed explanation of the data and annotations is published.
 
-...
+summary: This dataset includes audio excerpts from Carnatic and Hindustani music with
+  annotations for melodic sections, nyas events, and pitch/tonic features, aimed at
+  developing methods for computing melodic similarity in Indian art music.

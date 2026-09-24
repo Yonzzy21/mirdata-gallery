@@ -60,4 +60,6 @@ docstring: |+
       Musicbrainz metadata has been computed as is shown here:
       https://github.com/mir-dataset-loaders/mirdata-notebooks/blob/master/Tonality_classicalDB/ClassicalDB_musicbrainz_metadata.ipynb
 
-...
+summary: The Tonality classicalDB Dataset includes 881 classical music pieces with
+  single-key annotations, primarily for evaluating key estimation algorithms. Audio
+  is private but metadata and spectral features are provided.

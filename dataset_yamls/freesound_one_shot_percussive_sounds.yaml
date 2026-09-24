@@ -55,3 +55,6 @@ docstring: |2
       the Marie Skłodowska-Curie grant agreement No. 765068 (MIP-Frontiers).
       This work has received funding from the European Union's Horizon 2020 research and innovation programme under
       grant agreement No. 770376 (TROMPA).
+summary: The dataset includes 10,254 one-shot percussive sounds from Freesound.org,
+  annotated with tags and timbral features from two extractors, for the task of percussive
+  sound analysis.

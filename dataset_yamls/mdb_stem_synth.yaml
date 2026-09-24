@@ -32,4 +32,6 @@ docstring: |+
       - https://synthdatasets.weebly.com/mdb-stem-synth.html
       - https://zenodo.org/record/1481172
 
-...
+summary: The MDB-stem-synth dataset includes 230 solo stems from various musical instruments
+  and voices resynthesized for perfect pitch annotation, suitable for tasks like music
+  transcription and analysis.

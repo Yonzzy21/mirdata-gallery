@@ -40,4 +40,7 @@ docstring: |+
       musical instrument recognition in the publications of Lostanlen and Cella
       (ISMIR 2016) and Andén et al. (IEEE TSP 2019).
 
-...
+summary: The Medley-solos-DB dataset includes 3-second audio clips of solo instruments
+  from MedleyDB and solosDB, covering eight instruments (clarinet, distorted electric
+  guitar, female singer, flute, piano, tenor saxophone, trumpet, violin), for automatic
+  musical instrument recognition.

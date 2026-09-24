@@ -67,4 +67,6 @@ docstring: |+
       This work is partially supported by the European Union’s Horizon 2020 research and innovation programme under
       grant agreement No 688382 AudioCommons.
 
-...
+summary: The AcousticBrainz Genre dataset includes genre and subgenre annotations
+  from AllMusic, Discogs, Last.fm, and Tagtraum, along with music features, aimed
+  at evaluating hierarchical multi-label genre classification systems.

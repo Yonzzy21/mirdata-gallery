@@ -67,4 +67,7 @@ docstring: |+
 
       The annotations files of this dataset are shared with the following license: Creative Commons Attribution Non Commercial Share Alike 4.0 International
 
-...
+summary: This dataset includes two-minute stereo mp3 audio excerpts from Hindustani
+  music, annotated with time-aligned markers indicating taal cycles, sam, and matras,
+  along with metadata on tempo, artist, and raag. The primary MIR task is taal and
+  beat tracking.

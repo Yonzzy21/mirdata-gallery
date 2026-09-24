@@ -47,3 +47,7 @@ docstring: |
       [2] Böck, S., and M. Schedl. Enhanced beat tracking with context-aware neural networks. In Proceedings of the International Conference on Digital Audio Effects (DAFX), 2010.
 
       [3] Dixon, S., F. Gouyon & G. Widmer. Towards Characterisation of Music via Rhythmic Patterns. In Proceedings of the 5th International Society for Music Information Retrieval Conference (ISMIR). 2004.
+summary: The Cuidado Rhythm Dataset includes beat and bar annotations for various
+  ballroom dance styles like Waltz, Tango, and Samba, designed for tasks such as beat
+  tracking and rhythm analysis in cuidado dance music. Annotations are provided in
+  `.beats` files, reflecting the characteristic rhythms of each dance style.

@@ -55,4 +55,7 @@ docstring: |+
       For more information about the dataset as well as IAM and annotations, please refer to:
       https://mtg.github.io/saraga/, where a really detailed explanation of the data and annotations is published.
 
-...
+summary: This dataset includes 108 Hindustani music tracks with time-aligned melody,
+  rhythm, and structural annotations, along with automatically extracted pitch and
+  tonic features. Annotations cover sections, tempos, sama (rhythmic cycles), and
+  phrase transcriptions using solfège symbols.

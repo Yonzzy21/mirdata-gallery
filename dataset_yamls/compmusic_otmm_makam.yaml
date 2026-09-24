@@ -56,3 +56,6 @@ docstring: |
 
       A complementary toolbox for this dataset is MORTY, which is a mode recogition and tonic identification toolbox.
       It can be used and optimized for any modal music culture. Further details are explained in the publication above.
+summary: This dataset includes 200 recordings from 20 common makams, each with a unique
+  MBID, for makam recognition, featuring annotations on makam and tonic in JSON format,
+  and provides pitch tracks of the predominant melodies for copyright reasons.

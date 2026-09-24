@@ -74,3 +74,7 @@ docstring: |
       All excerpts are permissively licensed (Creative Commons or Public Domain).
 
       For more details, please visit: https://zenodo.org/record/1432913
+summary: The OpenMIC-2018 dataset includes 20000 10-second excerpts from polyphonic
+  music, annotated for 20 instrument categories; it provides raw audio, VGGish features,
+  and partial annotations with confidence ratings, aimed at polyphonic music instrument
+  classification.

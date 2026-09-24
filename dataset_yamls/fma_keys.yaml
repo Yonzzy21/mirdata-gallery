@@ -72,3 +72,6 @@ docstring: |2
       The FMA metadata is made freely available for public use under a Creative Commons license.
       We do not hold the copyright on the audio and distribute it under the license chosen by the artist.
       The dataset is meant for research purposes.
+summary: FMA Keys includes 5489 songs across 17 genres, providing song-level key and
+  mode annotations; the primary task is key detection. Annotations cover FMA track
+  IDs, Spotify URIs, and key/mode in both string and numerical formats.

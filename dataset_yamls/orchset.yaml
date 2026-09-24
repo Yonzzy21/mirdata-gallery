@@ -30,4 +30,5 @@ docstring: |+
 
       For more details, please visit: https://zenodo.org/record/1289786#.XREpzaeZPx6
 
-...
+summary: Orchset includes 64 symphonic music audio excerpts with annotated melodies,
+  aimed at melody extraction tasks.

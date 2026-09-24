@@ -70,4 +70,6 @@ docstring: |+
       If you have any questions or comments about the dataset, please feel free to email: [sankalp (dot) gulati (at) gmail (dot) com], or
       [sankalp (dot) gulati (at) upf (dot) edu].
 
-...
+summary: This dataset includes audio excerpts of Indian Art Music, with annotations
+  of tonic pitch and metadata for tonic identification, primarily for Carnatic and
+  Hindustani music.

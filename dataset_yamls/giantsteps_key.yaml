@@ -49,4 +49,6 @@ docstring: |+
 
       All the data of this dataset is licensed with Creative Commons Attribution Share Alike 4.0 International.
 
-...
+summary: The giantsteps_key dataset includes 600 two-minute EDM excerpts annotated
+  with single-key labels and 500 tracks with pitch-class set descriptions; it aims
+  to evaluate key estimation algorithms in EDM.

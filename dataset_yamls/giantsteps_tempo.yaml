@@ -96,4 +96,6 @@ docstring: |+
           3419452.LOFI.mp3  119
           3577631.LOFI.mp3  119
 
-...
+summary: The giantsteps_tempo dataset includes 664 2-minute audio previews of electronic
+  dance music from Beatport, with annotations for tempo and genre provided through
+  manual corrections, focusing on tempo estimation.

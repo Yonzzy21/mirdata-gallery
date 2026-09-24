@@ -45,4 +45,6 @@ docstring: |+
 
       For more details, please visit: http://mac.citi.sinica.edu.tw/ikala/
 
-...
+summary: The iKala dataset includes 30-second excerpts from 206 songs with separated
+  vocal and instrumental tracks, along with labeled pitch contours and lyrics for
+  252 excerpts, primarily for pitch tracking and lyric synchronization tasks.
