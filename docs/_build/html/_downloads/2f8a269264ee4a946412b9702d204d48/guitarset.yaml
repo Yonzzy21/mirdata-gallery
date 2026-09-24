@@ -74,4 +74,6 @@ docstring: |+
 
       For more details, please visit: http://github.com/marl/guitarset/
 
-...
+summary: GuitarSet includes 360 30-second acoustic guitar excerpts across various
+  styles, tempi, and progressions, with annotations for pitch, beats, tempo, and chords.
+  The dataset supports tasks like pitch tracking, beat detection, and chord recognition.

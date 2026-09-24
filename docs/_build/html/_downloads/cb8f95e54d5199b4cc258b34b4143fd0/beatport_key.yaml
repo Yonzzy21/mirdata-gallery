@@ -46,4 +46,6 @@ docstring: |+
 
       Data License: Creative Commons Attribution Share Alike 4.0 International
 
-...
+summary: The beatport_key dataset includes 1486 two-minute EDM audio excerpts annotated
+  with key labels, comments, and confidence levels, primarily for evaluating key estimation
+  algorithms in electronic dance music.

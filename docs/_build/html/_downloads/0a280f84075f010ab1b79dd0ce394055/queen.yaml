@@ -54,3 +54,6 @@ docstring: |
       Helena du Toit
       Vinh Ton
       Chuks Chiejine
+summary: Queen Dataset includes chord, key, and segmentation annotations for 51 songs
+  from Queen's greatest hits albums. The primary MIR task involves analyzing these
+  annotations to improve chord and key detection accuracy.

@@ -94,4 +94,6 @@ docstring: |+
       Both flavours can be used with or without the backing tracks (which need to be purchased online).
       Hence, when opening the dataset, use one of 4 versions: 'full', 'full_sax', 'lite', 'lite_sax'.
 
-...
+summary: The Filosax dataset includes 48 multitrack jazz recordings with 8 audio stems
+  and annotations for beats, chords, and sections. Note annotations are provided for
+  each saxophone solo, supporting tasks like transcription and segmentation.

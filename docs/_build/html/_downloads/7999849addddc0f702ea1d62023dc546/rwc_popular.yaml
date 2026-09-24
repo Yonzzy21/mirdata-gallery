@@ -71,4 +71,6 @@ docstring: |+
 
       For more details, please visit: https://staff.aist.go.jp/m.goto/RWC-MDB/rwc-mdb-p.html
 
-...
+summary: The RWC Popular Dataset includes 100 songs—20 English-lyric and 80 Japanese-lyric
+  popular music pieces from the 1980s and 1990s. Annotations provide metadata for
+  music information retrieval tasks.

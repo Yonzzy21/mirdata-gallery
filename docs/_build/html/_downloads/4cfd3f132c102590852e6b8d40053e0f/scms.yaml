@@ -40,4 +40,6 @@ docstring: |+
 
       For more information about Saraga Carnatic please refer to https://mtg.github.io/saraga/.
 
-...
+summary: This dataset includes 2460 Carnatic Music tracks with time-aligned vocal
+  melodies and synthesized pitch tracks, aimed for pitch extraction research. Annotations
+  provide ground truth for vocal pitch extraction in Indian Art Music recordings.

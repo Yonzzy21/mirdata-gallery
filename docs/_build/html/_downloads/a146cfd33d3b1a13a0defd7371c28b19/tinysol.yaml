@@ -60,4 +60,6 @@ docstring: |+
 
       For more details, please visit: https://www.orch-idea.org/
 
-...
+summary: TinySOL includes 2913 single-note samples from 14 instruments, suitable for
+  MIR tasks like instrument recognition. Annotations provide a balanced 5-fold split
+  for evaluation.

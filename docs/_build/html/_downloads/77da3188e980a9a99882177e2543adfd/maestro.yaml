@@ -48,4 +48,7 @@ docstring: |+
 
       For more details, please visit: https://magenta.tensorflow.org/datasets/maestro
 
-...
+summary: MAESTRO includes over 200 hours of high-quality piano performances with precise
+  MIDI and audio synchronization, providing key strike velocities and piece-level
+  annotations. The primary MIR task involves analyzing and aligning audio with MIDI
+  notes.

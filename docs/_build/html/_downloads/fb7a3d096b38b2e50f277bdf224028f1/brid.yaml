@@ -50,3 +50,7 @@ docstring: |
       [1] Lucas Maia, Pedro D. de Tomaz Júnior, Magdalena Fuentes, Martín Rocamora, Luiz W. P. Biscainho, Maurício V. M. Costa, and Sara Cohen. "A Novel Dataset of Brazilian Rhythmic Instruments and Some Experiments in Computational Rhythm Analysis." In Proceedings of the {CONGRESO LATINOAMERICANO DE LA AES}, 2018. [Link](https://api.semanticscholar.org/CorpusID:204762166)
 
       For more details on the dataset and its applications, please refer to the associated research papers and documentation.
+summary: The BRID dataset includes 367 solo and multiple-instrument recordings of
+  10 Brazilian instruments across 5 rhythm classes, providing annotations for beat
+  tracking and rhythmic pattern recognition. Primary tasks involve analyzing and understanding
+  Brazilian musical rhythms.

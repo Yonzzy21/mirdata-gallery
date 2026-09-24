@@ -42,4 +42,6 @@ docstring: |+
 
       For more details, please visit: https://github.com/gabolsgabs/DALI
 
-...
+summary: DALI includes 5358 audio files with time-aligned vocal melodies, lyrics at
+  four granularities, and metadata like genre and language, for analyzing melody and
+  lyrics in songs.

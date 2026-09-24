@@ -68,4 +68,6 @@ docstring: |2+
       Computer Music Journal.
 
 
-...
+summary: The TONAS dataset includes 72 monophonic a cappella sung excerpts (16 Deblas,
+  36 Martinete 1, 20 Martinete 2), each about 30 seconds long, with annotations of
+  notes, F0, and energy values, suitable for style classification and similarity tasks.

@@ -64,3 +64,7 @@ docstring: |
       (2) Music Technology Group, Universitat Pompeu Fabra, Barcelona, ES
       (3) University of Potsdam, DE
       (4) Joint Research Centre, European Commission, Seville, ES
+summary: Dagstuhl ChoirSet includes multitrack a cappella choral recordings with close-up
+  (larynx, dynamic, headset) and room microphone tracks, along with piano accompaniment.
+  Annotations provide individual singer tracks for MIR tasks such as source separation
+  and pitch estimation.

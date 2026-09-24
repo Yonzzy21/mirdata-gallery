@@ -59,4 +59,6 @@ docstring: |+
 
       For more details, please visit: https://compmusic.upf.edu/mridangam-stroke-dataset
 
-...
+summary: The Mridangam Stroke dataset includes 6977 audio samples of 10 strokes across
+  6 tonics, recorded in a studio. Annotations are in filenames indicating stroke,
+  tonic, and instance number, suitable for stroke recognition tasks.

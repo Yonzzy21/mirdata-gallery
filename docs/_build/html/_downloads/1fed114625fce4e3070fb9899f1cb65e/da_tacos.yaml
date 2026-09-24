@@ -124,4 +124,6 @@ docstring: |+
               "track_id": numpy.str_
           }
 
-...
+summary: Da-TACOS includes 25,000 pre-extracted features and metadata for cover songs,
+  focusing on cover song identification, with annotations like performance and work
+  titles, artists, release years, and genres. Primary task is cover song identification.

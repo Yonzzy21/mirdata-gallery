@@ -63,4 +63,6 @@ docstring: |+
 
       For more details, please visit: http://magenta.tensorflow.org/datasets/groove
 
-...
+summary: The Groove MIDI Dataset includes 13.6 hours of aligned MIDI and synthesized
+  audio of human-performed drumming, with annotations for genre, tempo, and drummer
+  ID, primarily for groove and style analysis.

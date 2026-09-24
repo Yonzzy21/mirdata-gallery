@@ -61,4 +61,6 @@ docstring: |+
 
       For more information about the dataset please refer to: https://compmusic.upf.edu/node/328
 
-...
+summary: The compmusic_raga dataset includes full-length audio recordings of Carnatic
+  and Hindustani music with associated rāga labels, providing tonal features and segmentations
+  for rāga recognition tasks.

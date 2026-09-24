@@ -42,4 +42,6 @@ docstring: |+
 
       For more details, please visit: https://github.com/DDMAL/salami-data-public
 
-...
+summary: The SALAMI dataset includes structural annotations for over 1300 unique tracks,
+  focusing on musical structure; the primary MIR task involves analyzing these annotations
+  for music segmentation and structure recognition.

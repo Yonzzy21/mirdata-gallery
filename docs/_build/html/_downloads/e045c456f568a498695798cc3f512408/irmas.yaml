@@ -110,4 +110,6 @@ docstring: |2+
 
       For more details, please visit: https://www.upf.edu/web/mtg/irmas
 
-...
+summary: IRMAS includes 9,579 musical audio excerpts of 3 seconds each, covering 11
+  instruments and two datasets with annotations for predominant instruments, drum
+  presence, and musical genre. The primary MIR task is instrument recognition.

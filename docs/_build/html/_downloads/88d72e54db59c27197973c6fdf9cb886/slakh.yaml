@@ -44,4 +44,6 @@ docstring: |+
 
       For more information see http://www.slakh.com/
 
-...
+summary: The slakh dataset includes 2100 multi-track audio samples and aligned MIDI
+  for music source separation and transcription, synthesized from 187 instrument patches.
+  Annotations provide individual MIDI tracks and mixed audio for 145 hours of music.

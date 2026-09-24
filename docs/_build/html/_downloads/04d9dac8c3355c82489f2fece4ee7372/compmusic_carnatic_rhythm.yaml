@@ -71,4 +71,7 @@ docstring: |+
       The annotations files of this dataset are shared with the following license:
       Creative Commons Attribution Non Commercial Share Alike 4.0 International
 
-...
+summary: This dataset includes audio excerpts from Carnatic music, annotated with
+  time-aligned markers indicating metrical positions in the taala cycle, and provides
+  metadata such as taala type, offset, and cycle length. The primary MIR task is taala
+  and beat tracking.

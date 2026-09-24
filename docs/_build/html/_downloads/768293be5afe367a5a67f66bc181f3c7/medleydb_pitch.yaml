@@ -41,4 +41,5 @@ docstring: |+
 
       For more details, please visit: https://medleydb.weebly.com
 
-...
+summary: MedleyDB pitch includes f0-annotated, monophonic stems from multitrack recordings;
+  annotations enable melody extraction and instrument recognition tasks.

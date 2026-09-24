@@ -77,4 +77,7 @@ docstring: |+
 
       For more details, please visit: https://staff.aist.go.jp/m.goto/RWC-MDB/rwc-mdb-j.html
 
-...
+summary: The RWC Jazz Dataset includes 50 jazz pieces with instrumentation and style
+  variations, along with fusion pieces combining jazz with other genres. Annotations
+  provide information on piece structure and performance details for music information
+  retrieval tasks.

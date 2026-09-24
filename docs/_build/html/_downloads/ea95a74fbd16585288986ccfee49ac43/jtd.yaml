@@ -108,4 +108,7 @@ docstring: |+
       For more details, please visit our GitHub repository (https://github.com/HuwCheston/Jazz-Trio-Database/) or
       our TISMIR publication (https://doi.org/10.5334/tismir.186).
 
-...
+summary: The Jazz Trio Database (JTD) includes 1,294 multitrack jazz performances,
+  with annotations for beat and downbeat timestamps, MIDI transcriptions, and onset
+  timestamps for unmixed audio tracks, primarily for jazz piano trio performances.
+  The dataset supports tasks like onset detection, beat tracking, and automatic transcription.

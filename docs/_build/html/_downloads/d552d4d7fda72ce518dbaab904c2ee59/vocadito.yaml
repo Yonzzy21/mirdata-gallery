@@ -29,4 +29,6 @@ docstring: |+
 
       For more details, please visit: https://zenodo.org/record/5578807
 
-...
+summary: vocadito includes 40 solo, monophonic singing excerpts in 7 languages; annotations
+  provide frame-level f0, note annotations, lyrics, and language identification. Primary
+  MIR task involves pitch and melody analysis.
