@@ -47,9 +47,7 @@ for yml_path in sorted(yaml_dir.glob("*.yaml")):
 
 
 * **Annotations:** {annotations_str}
-* **License:** {license_str}
-* **Downloadable Remotes:** {remotes_str}
-* **YAML File:** :download:`{yml_path.name} <../dataset_yamls/{yml_path.name}>`
+
 """
      # 2. Add Dataset Information dropdown
     docstring = data.get("docstring")
@@ -68,13 +66,22 @@ for yml_path in sorted(yaml_dir.glob("*.yaml")):
         # Dedent and re-indent cleanly
         clean_doc = textwrap.dedent("\n".join(filtered)).strip()
         indented_doc = textwrap.indent(clean_doc, "   ")
+        about_text = data.get("summary") or clean_doc
+
         card += f"""
-.. admonition:: Dataset Information
-   :class: dropdown
+**About this dataset:**
    
-{indented_doc}
+{about_text}
+
 """
 
+    # 3. License, Remotes & YAML Download
+    card += f"""* **License:** {license_str}
+* **Downloadable Remotes:** {remotes_str}
+* **YAML File:** :download:`{yml_path.name}<../dataset_yamls/{yml_path.name}>`
+
+"""
+    
 
     # 3. Add Download Instructions dropdown if available
     download_info = data.get("download_info")
